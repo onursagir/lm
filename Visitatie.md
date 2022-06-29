@@ -8,7 +8,7 @@ Visitaties worden in allerlei sectoren toegepast, bijvoorbeeld de medische werel
 
 # Hoe verloopt een visitatie?
 
-Op het web zijn verschillende draaiboeken te vinden voor collegiale visitaties; uit een aantal daarvan hebben we geput voor de LegitiMaat.[4](#sdfootnote4sym)
+Op het web zijn verschillende draaiboeken te vinden voor collegiale visitaties; uit een aantal daarvan hebben we geput voor de LegitiMaat.[1](#sdfootnote1sym)
 
 Een visitatie bestaat in principe uit drie fasen. De eerste fase is een zelfevaluatie door de organisatie, de tweede fase is een bezoek van een onafhankelijk visitatieteam dat met alle betrokkenen spreekt aan de hand van de resultaten van de zelfevaluatie. Op basis daarvan _waardeert_ het team de organisatie en doet het aanbevelingen voor verdere verbetering. In de derde fase geeft de organisatie uitvoering aan de aanbevelingen.
 
@@ -18,13 +18,13 @@ De beoordelaars [link naar wie en wat] in het onafhankelijk visitatieteam zijn m
 
 Hierna worden de drie fasen beschreven.
 
-## Fase 1 - Zelfevaluatie
+## _Fase 1 - Zelfevaluatie_
 
 De organisatie voert de zelfevaluatie uit aan de hand van de lijst met documenten [link naar De Documenten in Wie en wat] die nodig zijn voor het onderzoek en de LegitiMaat-vragenlijsten [link]. Een coördinator zet de lijsten uit bij de betrokken onderdelen, bewaakt de voorgang en checkt de aangeleverde input op duidelijkheid e.d.
 
 De start van de zelfevaluatie is afhankelijk van de vraag wanneer het visitatieteam het visitatiebezoek kan afleggen. Als richtlijn kan worden aangehouden dat de zelfevaluatie ca. vier weken voor het bezoek van het visitatieteam moet zijn afgerond (zie tijdschema in paragraaf 4). Dit geeft het team de tijd om het bezoek voor te bereiden. Het is van belang dat in elk geval de voorzitter en secretaris van het visitatieteam bekend zijn bij de start van de zelfevaluatie, zodat (in een kennismakingsgesprek) de termijnen met hen kunnen worden afgestemd.
 
-## Fase 2 - Bezoek visitatieteam: proof of the pudding
+## _Fase 2 - Bezoek visitatieteam: proof of the pudding_
 
 De visitatie zelf wordt uitgevoerd door het visitatieteam. Het visitatieteam bestaat uit de beoordelaars met de drie perspectieven: juridisch, audit perspectief en IT-ontwikkel perspectief. Denk aan 4 tot 5 beoordelaars en een onafhankelijk voorzitter en secretaris. Het visitatieteam kijkt in hoeverre het beeld dat de organisatie van zichzelf heeft waar het gaat over kwaliteit van ontwikkeling en toepassing van algoritmen, overeenkomt met het beeld dat het visitatieteam krijgt op basis van de eigen voorbereiding (doornemen van de zelfevaluatie, en aanvullend onderzoek.
 
@@ -48,7 +48,7 @@ Na het bezoek (of de bezoeken) stelt het visitatieteam een voorlopige rapportage
 
 Het visitatieteam bespreekt het rapport met het MT van de organisatie. Zo kan er een mondelinge toelichting gegeven worden en kan de organisatie reageren (hoor en wederhoor). De rapportage wordt definitief gemaakt.
 
-## Fase 3 - Uitvoering van de aanbevelingen
+## _Fase 3 - Uitvoering van de aanbevelingen_
 
 De organisatie maakt een implementatieplan voor de gedane aanbevelingen. Hierin worden acties voor uitbouw of bestendiging van positieve punten opgenomen en acties ter opvolging van verbeterpunten. De acties worden van een concrete realisatietermijn voorzien, zodat zij in een volgende visitatie kunnen worden meegenomen.
 
@@ -75,3 +75,6 @@ In de onderstaande tabel is een (indicatief) tijdschema opgenomen voor het visit
 | Plannen gesprek met organisatie | 3 weken na visitatie | Secretaris/Coördinator |
 | Gesprek met organisatie over het rapport | 3 weken na visitatie | Visitatieteam |
 | Opstellen implementatieplan | 4 weken na visitatie | Coördinator |
+
+[1](#sdfootnote1anc) [Collegiale
+ Visitatie — Draaiboek voor de school (vo-raad.nl)](https://www.vo-raad.nl/system/downloads/attachments/000/000/781/original/Draaiboek_collegiale_visitatie_school.pdf?msclkid=9b2a0919c23b11ecbafd23c2b2f25a9f).
