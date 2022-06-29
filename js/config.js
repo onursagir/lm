@@ -2,9 +2,9 @@ var respecConfig =
 {
   specStatus: "WV",
   specType: "HR",
-  pubDomain: "dk",
+  pubDomain: "lm",
   subtitle: "Een werkmethode voor het doen van onderzoek door derden naar het gebruik van algoritmen door een overheidsorganisatie.",
-  shortName: "De LegitiMaat",
+  shortName: "DeLegitiMaat",
   publishDate: "2022-07-01",
   publishVersion: "0.0.1",
   previousPublishVersion: "",
@@ -73,7 +73,7 @@ var respecConfig =
 
   // nl_organisationPublishURL points to organisation specifica publication page, used in header
   // defaults to  https://docs.geostandaarden.nl/"
-  nl_organisationPublishURL: "https://publicatie.centrumvoorstandaarden.nl/",
+  nl_organisationPublishURL: "https://open-regels.nl/",
 
   // nl_logo refers to company logo
   // defaults to https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg
