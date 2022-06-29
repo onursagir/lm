@@ -1,0 +1,55 @@
+publiccodeYmlVersion: "0.2"
+ 
+name: De LegitiMaat
+url: "https://github.com/MinBZK/LegitiMaat.git"
+softwareVersion: "dev"    # Optional
+releaseDate: "2021-07-01"
+platforms:
+  - web
+ 
+categories:
+  - law & regulations
+
+developmentStatus: development
+
+softwareType: "webserver"
+
+description:
+  en:
+    localisedName: De LegitiMaat   # Optional
+    shortDescription: >
+          A working method for conducting third-party research into the use of algorithms by a government organization.
+
+    longDescription: >
+          With more and more talk about oversight of algorithms, it is important to know how to conduct research
+          into algorithms by third parties in such a way that the day-to-day execution processes are not disrupted.
+
+          It is not easy to arrive at such a working method. Not all organizations have a set of algorithms/decision
+          rules in natural language, but only computer code that is barely legible for laymen. It also happens that 
+          organizations have purchased software (or the use of software) with which laws are implemented and where the 
+          supplier is the only one who has the substantive knowledge in-house. However, there are also implementation 
+          institutions that have the decision rules in natural language in the drawer. This fact, or promise (?) has 
+          led to the idea of investigating these documents.
+
+          In this light, we have developed a working method that enables implementation organizations that use 'simple' 
+          algorithms for (automated) decision-making in the performance of their legal tasks to:
+          - To test and justify the legitimacy (in a legal and accountable sense) of the algorithms themselves and 
+            the decisions based on them;
+          - To be transparent about the operation of the algorithms used.
+
+    features:
+       - Library
+
+legal:
+  license: W3C Software Notice and License
+
+maintenance:
+  type: "community"
+
+  contacts:
+    - name: Steven Gort (mailto:steven.gort@ictu.nl)
+
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - en
