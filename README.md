@@ -26,7 +26,7 @@ Door de onderzoeksgroep wordt verslag gedaan van het onderzoek in begrijpelijke 
 
 Toezicht vindt in de regel achteraf plaats, waarbij wordt gekeken of feitelijk handelen overeenstemt met na te leven normen. Bij algoritmen – zeker de categorie ‘eenvoudige’ algoritmen, beslis- of rekenregels op grond van wetgeving – is het echter productiever om vooraf al te investeren in werkwijzen om rechtmatigheid, rechtvaardigheid en transparantie te verzekeren. Dit maakt dat de uitvoeringsorganisatie die de algoritmen toepast zelf beter in control is over het proces van ontwikkelen en toepassen van algoritmen en daarover desgevraagd makkelijker en beter verantwoording kan afleggen tegenover een toezichthouder. Dat is effectiever en efficiënter. Bovendien biedt het vooraf zorgen dat beslis- en rekenregels in lijn zijn met de wetgeving, dat besluiten die (geautomatiseerd) worden genomen op grond daarvan, juist en rechtmatig zijn.
 
-In dit licht hebben we een werkmethode ontwikkeld – [de Legitimaat](https://sgort.github.io/LegitiMaat/) – die uitvoeringsorganisaties die ‘eenvoudige’ algoritmen gebruiken voor het (geautomatiseerd) nemen van beslissingen bij de uitvoering van hun wettelijke taken in staat stelt om:
+In dit licht hebben we een werkmethode ontwikkeld – [de Legitimaat](https://minbzk.github.io/LegitiMaat/) – die uitvoeringsorganisaties die ‘eenvoudige’ algoritmen gebruiken voor het (geautomatiseerd) nemen van beslissingen bij de uitvoering van hun wettelijke taken in staat stelt om:
 
 - De rechtmatigheid (in juridische en comptabele zin) van de algoritmen
    zelf en de daarop gebaseerde beslissingen te toetsen en verantwoorden;

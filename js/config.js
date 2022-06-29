@@ -5,7 +5,7 @@ var respecConfig =
   pubDomain: "dk",
   subtitle: "Een werkmethode voor het doen van onderzoek door derden naar het gebruik van algoritmen door een overheidsorganisatie.",
   shortName: "De LegitiMaat",
-  publishDate: "2022-06-24",
+  publishDate: "2022-07-01",
   publishVersion: "0.0.1",
   previousPublishVersion: "",
   previousPublishDate: "",
@@ -46,7 +46,7 @@ var respecConfig =
     name: "Steven Gort",
     url: "https://www.ictu.nl",
   }],
-  github: "https://github.com/sgort/LegitiMaat",
+  github: "https://github.com/MinBZK/LegitiMaat",
 
   // Controls if linked "§" section markers are added to a document
   addSectionLinks: true,
