@@ -4,7 +4,7 @@ var respecConfig =
   specType: "HR",
   pubDomain: "lm",
   subtitle: "Een werkmethode voor het doen van onderzoek door derden naar het gebruik van algoritmen door een overheidsorganisatie.",
-  shortName: "DeLegitiMaat",
+  shortName: "delegitimaat",
   publishDate: "2022-07-01",
   publishVersion: "0.0.1",
   previousPublishVersion: "",
