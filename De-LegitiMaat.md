@@ -48,7 +48,7 @@ Er gebeurt van alles op het terrein van algoritmen bij de overheid. Zo wordt er 
 
 Als de overheid besluiten neemt in individuele gevallen waarbij het gaat om grote aantallen en veel vergelijkbare repeterende taken, gaat dit vaak geautomatiseerd. Hiervoor moet de wet vertaald worden en moet bepaald worden hoe de wet wordt uitgevoerd. Na gesprekken met de professionals hebben we dit proces in de volgende stappen onderscheiden.
 
-![Processen wetsuitvoering](media/processen-wetsuitvoering.png)
+![Processen wetsuitvoering](media/processen-wetsuitvoering.png "Processen wetsuitvoering")
 
 Deze procesplaat is een illustratie, geen voorschrift. Elke organisatie zal het proces op een eigen manier hebben ingericht. Dat blijft in stand. De procesplaat en de onderverdeling in De LegitiMaat, is een manier om het gesprek te voeren.
 
@@ -56,7 +56,7 @@ Deze procesplaat is een illustratie, geen voorschrift. Elke organisatie zal het 
 
 ‎De LegitiMaat gaat over de geautomatiseerde uitvoering van wetten door de overheid. Hierbij maken we een onderscheid tussen besluiten die zonder menselijke tussenkomst worden genomen (gladde gevallen) en besluiten die gedeeltelijk met menselijke tussenkomst worden genomen (niet-gladde gevallen/uitval/uitworp). In het laatste geval fungeren de algoritmen ter ondersteuning van de beslissing. Om te bepalen welke besluiten volledig en welke deels geautomatiseerd worden genomen, wordt gebruik gemaakt van selectie- of prioriteringsmethoden. Door het toepassen van selectieregels (soms in meerdere rondes om aan te sluiten bij beschikbare capaciteit medewerkers) kan de aanvraag ter afhandeling aan een medewerker toebedeeld worden. Deze kan dan extra informatie aanvragen of extra controles verrichten en in samenwerking met de machine een besluit nemen. In het juridisch perspectief noemen we dit de voorbereidende handelingen.
 
-![Voorbereidende handelingen](media/voorbereidende-handelingen.png)
+![Voorbereidende handelingen](media/voorbereidende-handelingen.png "Voorbereidende handelingen")
 
 ## _Over wettelijke regels, regels en algoritmen_
 

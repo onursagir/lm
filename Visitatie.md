@@ -8,7 +8,7 @@ Visitaties worden in allerlei sectoren toegepast, bijvoorbeeld de medische werel
 
 # Hoe verloopt een visitatie?
 
-Op het web zijn verschillende draaiboeken te vinden voor collegiale visitaties; uit een aantal daarvan hebben we geput voor de LegitiMaat.[1](#sdfootnote1sym)
+Op het web zijn verschillende draaiboeken te vinden voor collegiale visitaties; uit een aantal daarvan hebben we geput voor de LegitiMaat.
 
 Een visitatie bestaat in principe uit drie fasen. De eerste fase is een zelfevaluatie door de organisatie, de tweede fase is een bezoek van een onafhankelijk visitatieteam dat met alle betrokkenen spreekt aan de hand van de resultaten van de zelfevaluatie. Op basis daarvan _waardeert_ het team de organisatie en doet het aanbevelingen voor verdere verbetering. In de derde fase geeft de organisatie uitvoering aan de aanbevelingen.
 
@@ -75,6 +75,3 @@ In de onderstaande tabel is een (indicatief) tijdschema opgenomen voor het visit
 | Plannen gesprek met organisatie | 3 weken na visitatie | Secretaris/Coördinator |
 | Gesprek met organisatie over het rapport | 3 weken na visitatie | Visitatieteam |
 | Opstellen implementatieplan | 4 weken na visitatie | Coördinator |
-
-[1](#sdfootnote1anc) [Collegiale
- Visitatie — Draaiboek voor de school (vo-raad.nl)](https://www.vo-raad.nl/system/downloads/attachments/000/000/781/original/Draaiboek_collegiale_visitatie_school.pdf?msclkid=9b2a0919c23b11ecbafd23c2b2f25a9f).
