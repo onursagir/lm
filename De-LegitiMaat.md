@@ -5,7 +5,7 @@ De overheid heeft veel verschillende taken. Deze taken worden bij wet toegekend 
 
 Met de LegitiMaat kan de uitvoerende overheid verantwoording afleggen en kunnen anderen zich er een mening over vormen. De LegitiMaat is bedoeld om te _waarderen_, zodat de organisatie zich kan ontwikkelen en verbeteren. Het is een [visitatie-instrument](https://minbzk.github.io/LegitiMaat/#de-legitimaat-als-visitatie-instrument).
 
-## _Voor wie is het bedoeld?_
+## Voor wie is het bedoeld?
 De LegitiMaat is een werkmethode om de geautomatiseerde uitvoering van wetten door de overheid op een gestandaardiseerde manier inzichtelijk te maken en te (laten) beoordelen. De LegitiMaat gaat uit van het vakmanschap van de medewerkers bij de bestuursorganen en van de toenemende vraag in de samenleving dat de overheid rekenschap aflegt over onzichtbare processen.
 
 Het is bedoeld voor publieke organisaties die wetten geautomatiseerd uitvoeren en besluiten nemen in individuele gevallen. Zij kunnen inzicht te geven over _bestaande_ processen. Ook kunnen zij een visitatie-team met beoordelaars van andere overheidsorganisaties uitnodigen om onderzoek te doen zodat de organisatie weet wat ontwikkeld kan worden of verbeterd.
@@ -14,7 +14,7 @@ Bij _nieuw_ te ontwikkelen van ITsystemen kunnen zij direct zien wat zij moeten 
 
 De LegitiMaat is ook bedoeld voor beoordelaars. De juristen, auditors en collega-ontwikkelaars die inzicht nodig hebben en een waardering moeten geven over de manier waarop het bestuursorgaan wetten geautomatiseerd uitvoert.
 
-## _Hoe kan ik een bijdrage leveren?_
+## Hoe kan ik een bijdrage leveren?
 Op 1 juli 2022 is het prototype aangeboden aan het ministerie van BZK en gepubliceerd op GitHub. De werkmethode is werkende weg ontwikkeld, getest en aangepast. Meer informatie over het proces en de literatuur die is gebruikt: LINK naar PLEIO. We ontvangen graag verbeteringen! Neem contact op met: XXX
 
 # Een methode om te evalueren en te leren
@@ -26,7 +26,7 @@ Het visitatie-team dat vervolgens aan de slag gaat, zal interviews houden en ste
 
 De LegitiMaat is een belangrijke stap om transparant te zijn en rekenschap en verantwoording af te leggen over het gebruik van algoritmen bij geautomatiseerde uitvoering van wetten.
 
-## _Interdisciplinair en generiek_
+## Interdisciplinair en generiek
 Het is niet zinvol als iedereen vanuit zijn eigen discipline verschillende eisen stelt. Het is ook niet efficiënt als elke overheidsorganisatie zelf moet nadenken over welke vragen iemand zou kunnen hebben. De LegitiMaat is daarom een integrale methode die geschikt is voor drie disciplines voor verschillende overheidsorganisaties. Ook is de werkmethode geschikt voor herhaald gebruik bij verschillende publieke organisaties.
 
 Met De LegitiMaat kan:
@@ -34,7 +34,7 @@ Met De LegitiMaat kan:
 - een informatiekundige een uitspraak doen over de kwaliteit van de geautomatiseerde uitvoering,
 - een accountant of interne controller een uitspraak doen over de financiële [=rechtmatigheid=] van de geautomatiseerde uitvoering.
 
-## _Relatie met andere initiatieven_
+## Relatie met andere initiatieven
 Er gebeurt van alles op het terrein van algoritmen bij de overheid. Zo wordt er gewerkt aan een algoritmeregister en hanteert de overheid een open source beleid [LINK naar begrippenlijst] Ook wordt steeds vaker over toezicht op algoritmen gesproken. Maar een beoordeling kan pas gegeven worden als de overheidsorganisatie eerst zelf inzicht heeft in het eigen complexe en zeer (wets)technische proces.
 
 # Hoe worden wetten geautomatiseerd uitgevoerd?
@@ -44,12 +44,12 @@ Als de overheid besluiten neemt in individuele gevallen waarbij het gaat om grot
 
 Deze procesplaat is een illustratie, geen voorschrift. Elke organisatie zal het proces op een eigen manier hebben ingericht. Dat blijft in stand. De procesplaat en de onderverdeling in De LegitiMaat, is een manier om het gesprek te voeren.
 
-## _Geautomatiseerde besluiten of beslissingsondersteuning?_
+## Geautomatiseerde besluiten of beslissingsondersteuning?
 De LegitiMaat gaat over de geautomatiseerde uitvoering van wetten door de overheid. Hierbij maken we een onderscheid tussen besluiten die zonder menselijke tussenkomst worden genomen (gladde gevallen) en besluiten die gedeeltelijk met menselijke tussenkomst worden genomen (niet-gladde gevallen/uitval/uitworp). In het laatste geval fungeren de algoritmen ter ondersteuning van de beslissing. Om te bepalen welke besluiten volledig en welke deels geautomatiseerd worden genomen, wordt gebruik gemaakt van selectie- of prioriteringsmethoden. Door het toepassen van selectieregels (soms in meerdere rondes om aan te sluiten bij beschikbare capaciteit medewerkers) kan de aanvraag ter afhandeling aan een medewerker toebedeeld worden. Deze kan dan extra informatie aanvragen of extra controles verrichten en in samenwerking met de machine een besluit nemen. In het juridisch perspectief noemen we dit de voorbereidende handelingen.
 
 ![Voorbereidende handelingen](media/voorbereidende-handelingen.png "Voorbereidende handelingen")
 
-## _Over wettelijke regels, regels en algoritmen_
+## Over wettelijke regels, regels en algoritmen
 Om de legitimiteit te beoordelen van iets dat door een machine wordt gedaan, is een brug of verbinding (interface) nodig tussen de code die de machine gebruikt en de juridische bronnen die bepalen wat de machine moet doen.
 
 De code in de machine is voor softwareontwikkelaars een goed begrijpelijke taal, maar voor veel andere mensen niet. Juristen zijn juist goed in het begrijpen van de betekenis van juridische bronnen. Voor niet-juristen is dat vaak moeilijk. In een multidisciplinair gezelschap is een gemeenschappelijke taal nodig om overeenstemming te kunnen krijgen over de betekenis van juridische bronnen en de wijze waarop deze moeten worden verwerkt in code.
@@ -58,10 +58,10 @@ Veel overheidsorganisaties gebruiken hiervoor een regelgebaseerde oplossing; den
 
 Doel van onze aanpak is om de kwaliteit van het interpreteren van wet- en regelgeving en het coderen van algoritmen op een gestandaardiseerde manier te beschrijven. Dat maakt het mogelijk om de kwaliteit van algoritmen te verbeteren aan de hand van interne discussie en/of externe toetsing.
 
-## _Over algoritmen en source code_
+## Over algoritmen en source code
 Uiteindelijk worden de algoritmen omgezet in computercode, de [=broncode (source code)=].
 
-## _Het bereik van De LegitiMaat_
+## Het bereik van De LegitiMaat
 In de LegitiMaat gaat het om het gehele proces van wet tot aan individueel besluit en daarna, reactie van de ontvangers (telefoontjes, klachten, bezwaren) en de [=keteneffecten=].
 
 Het is gemaakt voor de geautomatiseerde uitvoering van wet- en regelgeving (inclusief uitwerking of interpretatie in beleidsregels) door de overheid met behulp van kennisgebaseerde algoritmen.
@@ -76,8 +76,8 @@ Met selectieregels wordt bepaald welke besluiten mede door een ambtenaar moeten 
 
 De LegitiMaat is dus nog niet geschikt voor het afleggen van verantwoording of beoordelen van het gebruik van statistische algoritmen, inclusief [=machine learning=] die uitspraken doen over de waarschijnlijkheid van een uitkomst op basis van statistische analyse van gegevens uit het verleden. Dit kan later wel aan de orde komen.
 
-## _Wat te doen bij ingekochte toepassingen?_
+## Wat te doen bij ingekochte toepassingen?
 Om een waardering te kunnen geven is veel documentatie nodig. Ook als een overheidsorganisatie een IT-toepassing heeft ingekocht of laten ontwikkelen, blijft de publieke organisatie verantwoordelijk voor een juiste interpretatie van regelgeving en het naleven van algemene beginselen van behoorlijk bestuur. Als de documentatie niet beschikbaar kan worden gemaakt door de leverancier of deze weigert dit vanwege intellectuele eigendomsrechten, dan kan de LegitiMaat niet gebruikt worden.
 
-## _Keteneffecten_
+## Keteneffecten
 Binnen de overheid worden veel data en systemen aan elkaar verbonden. Dit betekent dat zowel de invoer (data) als het resultaat (een besluit) relaties hebben met andere processen, andere werkvelden, andere wetten en andere instanties. Het inzicht bieden in deze relaties en beoordelen of deze uitvoering volgens de wet, ABBB en het verbod van discriminatie is, hoort ook bij De LegitiMaat.
