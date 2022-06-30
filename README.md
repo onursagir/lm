@@ -1,46 +1,25 @@
-# Aanleiding en onderzoeksvraag
+# Samenvatting
+De overheid heeft veel verschillende taken. Deze taken worden bij wet toegekend aan een bestuursorgaan. Een deel van deze wettelijke taken wordt geautomatiseerd uitgevoerd met algoritmen. Denk aan het opleggen van boetes voor te hard rijden, het terugvorderen van toeslagen of het verlenen van AOW of kinderbijslag. Net als bij een meer zichtbare uitvoering van taken zoals het ophogen van dijken, is het belangrijk om te weten hoe deze processen verlopen en welke keuzen daarbij gemaakt zijn. Want ook de geautomatiseerde uitvoering van wetten is publiek handelen en moet legitiem zijn.
 
-Nu steeds vaker wordt gesproken over *toezicht op algoritmen* is het belangrijk om te weten hoe een onderzoek naar algoritmen door derden uitgevoerd kan worden op zo’n manier dat de dagelijkse uitvoeringsprocessen niet verstoord worden.
+In opdracht van het ministerie van BZK hebben experts nu De LegitiMaat ontwikkeld. Dit is een visitatie-instrument om de geautomatiseerde uitvoering van wetten door de overheid op een gestandaardiseerde manier inzichtelijk te maken en te (laten) beoordelen. De De LegitiMaat gaat uit van drie perspectieven: juridisch, ontwikkel en accountperspectief.
 
-Dit terrein is nog vrij onbekend. De Algemene rekenkamer heeft een onderzoek gedaan naar de wijze waarop de belastingdienst risicogericht werkt [1](#sdfootnote1sym). De Auditdienst Rijk en accountantskantoren zijn zich aan het voorbereiden op deze nieuwe taak [2](#sdfootnote2sym). De Algemene rekenkamer heeft een toetsingskader ontwikkeld [3](#sdfootnote3sym). Recent heeft de Raad van State een rapport uitgebracht over o.a. geautomatiseerde wetsuitvoering [4](#sdfootnote4sym).
+Het gaat dus om algoritmen, maar ook om de context waarbinnen die worden gebruikt. Bij algoritmen wordt vaak gedacht aan Machine Learning (ML). De LegitiMaat ziet vooral op kennisgebaseerde algoritmen waarmee de wet wordt uitgevoerd en burgers een individueel besluit (in de zin van de Algemene wet bestuursrecht) ontvangen.
 
-Maar wat geschikt is voor een financiële deskundige, werkt misschien niet voor een onderzoeker die een juridische check wil doen. Ook is het voor een uitvoeringsorganisatie vervelend als verschillende disciplines en organisaties zich op verschillende momenten over de wijze van ontwikkelen en het gebruik van de algoritmen buigen en de uitvoering belasten met vragen. Zowel voor onderzoekers, als voor uitvoeringsorganisaties lijkt een meer integrale aanpak noodzakelijk. Bijkomend voordeel is dat hierdoor voor uitvoeringsorganisaties duidelijker wordt welke beslissingen en keuzen tijdens de ontwikkeling gedocumenteerd moeten worden op een manier die een review mogelijk maakt.
+## Het bereik van De LegitiMaat
+De LegitiMaat gaat het om het gehele proces van wet tot aan individueel besluit en daarna, reactie van de ontvangers (telefoontjes, klachten, bezwaren) en de keteneffecten. Het is maatschappelijk zeer relevant dat dit proces beter inzichtelijk wordt. Daarmee verhogen we de transparantie. Met de LegitiMaat kan beoordeeld worden of de wetten, de algemene beginselen van behoorlijk bestuur en het verbod van discriminatie zijn nageleefd.
 
-Om te komen tot zo’n werkmethode is niet eenvoudig. Niet alle organisaties hebben een set algoritmen/beslisregels in natuurlijke taal voorhanden maar alleen de beschikking over computercode die nauwelijks leesbaar is voor leken. Het komt ook voor dat organisaties software (of het gebruik van software) hebben aangeschaft waarmee wetten worden uitgevoerd en waarbij de leverancier als enige de inhoudelijke kennis in huis heeft. Maar, er zijn ook uitvoeringsinstellingen die de beslisregels in natuurlijke taal in de la hebben liggen. Dit gegeven, of belofte (?) heeft geleid tot het
-idee om deze documenten te gaan onderzoeken.
+## Onderdelen van de LegitiMaat
+De LegitiMaat bevat een analyse van de gebruikelijke stappen die worden gezet bij overheidsorganisaties. Dit is de procesplaat.
 
-## Aanpak
-Om ergens te kunnen starten willen wij aan de hand van deze beslisregels of andere vormen van beschrijvingen met medewerkers van uitvoeringsinstellingen ontdekken wat een geschikte onderzoeksmethode zou zijn. Hierdoor wordt geborgd dat het resultaat (het opleveren van een multidisciplinaire werkmethode) aansluit bij de praktijk. Bijkomend voordeel is er ook voor de uitvoeringsinstellingen. Door dit onderzoek te faciliteren, wordt voorkomen dat er later vanuit een hiërarchische positie eisen aan de uitvoering gesteld worden die de uitvoering eerder hinderen dan faciliteren. Ook kan het leiden tot een pool van deskundigen die elkaars processen beoordelen (denk aan een gateway review). Dit betekent dat het lerend vermogen van de overheid toe kan nemen.
+Aan de hand van de procesplaat is er een Documentenlijst gemaakt. Dit zijn de documenten die nodig zijn voor het onderzoek.
 
-## Doel
-Het doel is dus: een werkmethode ontwikkelen voor het doen van onderzoek door derden naar de ontwikkeling van algoritmen en het gebruik van algoritmen door een overheidsorganisatie. Het is de bedoeling dat met de werkmethode derden in staat zijn zich een oordeel te vormen over de algoritmische uitvoering door de uitvoeringsinstellingen. Daarvoor is bijgaand denkschema geformuleerd.
-- We bestuderen hoe de ontwikkeling en het gebruik van algoritmen gelijktijdig juridisch, financieel en modelmatig onderzocht kan worden [topic]
-- omdat we willen weten welke discipline welke onderzoeksvragen beantwoord zou willen zien [rationale]
-- zodat we begrijpen wat de minst belastende aanpak is voor een multidisciplinaire en integrale beoordeling [significance]
+Dan zijn vragenlijsten aan de hand van de procesplaat. Deze kunnen door de overheidsorganisatie zelf worden beantwoord.
 
-## Wijze van het onderzoek
-De werkmethode zal werkende weg worden ontwikkeld door het kernteam en enthousiastelingen die deskundig zijn en het leuk vinden om te leren van andere disciplines. Hierbij zal vooral gebruik worden gemaakt van de inzet en tijd van de medewerkers van de uitvoeringsinstellingen zelf. Zij kennen de uitvoering en de dilemma’s. Er wordt alleen gekeken naar een bestaande geautomatiseerde uitvoering van wetgeving door middel van vaste algoritmen. Dit betekent dat we niet kijken naar lerende algoritmen zoals toepassingen met machine learning. We willen via de Manifestgroep zorgen voor een zo breed mogelijk bereik.
+Op basis van de verkregen informatie en antwoorden kan een visitatieteam aan de slag.
 
-## Resultaat
-Door de onderzoeksgroep wordt verslag gedaan van het onderzoek in begrijpelijke taal en beeld en wordt een werkmethode opgeleverd. Hier wordt veel aandacht besteed aan visualisatie van het onderzoeksproces. Omdat naar bestaande uitvoeringsprocessen wordt gekeken, is een bijkomend product een beoordeling van het gebruik van algoritmen hierbij maar dit is geen hoofddoel maar een stap om tot het hoofddoel te komen.
+Met De LegitiMaat hebben we de praktijk, de technologie en het recht een stap dichter bij elkaar gebracht.
 
-Toezicht vindt in de regel achteraf plaats, waarbij wordt gekeken of feitelijk handelen overeenstemt met na te leven normen. Bij algoritmen – zeker de categorie ‘eenvoudige’ algoritmen, beslis- of rekenregels op grond van wetgeving – is het echter productiever om vooraf al te investeren in werkwijzen om rechtmatigheid, rechtvaardigheid en transparantie te verzekeren. Dit maakt dat de uitvoeringsorganisatie die de algoritmen toepast zelf beter in control is over het proces van ontwikkelen en toepassen van algoritmen en daarover desgevraagd makkelijker en beter verantwoording kan afleggen tegenover een toezichthouder. Dat is effectiever en efficiënter. Bovendien biedt het vooraf zorgen dat beslis- en rekenregels in lijn zijn met de wetgeving, dat besluiten die (geautomatiseerd) worden genomen op grond daarvan, juist en rechtmatig zijn.
+## Meer weten?
+Wij werkten zelf ook zo open mogelijk. Hoe de De LegitiMaat tot stand is gekomen vind je [in deze slides](https://noti.st/maikeklip/XRXDzo/slides). Documenten en literatuur staan op [Pleio](https://regelbeheer.pleio.nl/groups/view/7e9c261c-2200-4247-bbfb-2f97cb4e8e6d/toezicht-op-algoritmen/files)
 
-In dit licht hebben we een werkmethode ontwikkeld – [de Legitimaat](https://minbzk.github.io/LegitiMaat/) – die uitvoeringsorganisaties die ‘eenvoudige’ algoritmen gebruiken voor het (geautomatiseerd) nemen van beslissingen bij de uitvoering van hun wettelijke taken in staat stelt om:
-
-- De rechtmatigheid (in juridische en comptabele zin) van de algoritmen
-   zelf en de daarop gebaseerde beslissingen te toetsen en verantwoorden;
-- Transparant te zijn over de werking van de ingezette algoritmen.
-
-Zoals gezegd kan dit instrument dienen voor verantwoording jegens een toezichthouder, maar het effect van de LegitiMaat wordt verder versterkt als we hem ook inzetten om te waarderen, en daarmee te ontwikkelen en te verbeteren. Dat waarderen kan worden vormgegeven door de LegitiMaat niet primair in te zetten als een audit-instrument, maar als een visitatie-instrument. Bij visitatie staat niet de controle centraal, maar het leren en ontwikkelen op grond van een zelfevaluatie en een collegiale waardering daarvan.
-
-We gebruiken hiervoor [Respec](https://github.com/w3c/respec/wiki), een open source product, ontwikkeld door het [World Wide Web Consortium](http://www.w3.org/) (W3C).
-
-### Voetnoten
-[1](#sdfootnote1anc) [Datagedreven selectie van aangiften door de Belastingdienst | Rapport | Algemene Rekenkamer](https://www.rekenkamer.nl/publicaties/rapporten/2019/06/11/datagedreven-selectie-van-aangiften-door-de-belastingdienst)
-
-[2](#sdfootnote2anc) [Wie controleert de hogepriesters van de AI algoritmen? - Smarthealth](https://www.smarthealth.nl/2018/06/04/wie-controleert-ai-artificial-intelligence-zorg/)
-
-[3](#sdfootnote3anc) [Wat is het toetsingskader | Algoritmes | Algemene Rekenkamer](https://www.rekenkamer.nl/onderwerpen/algoritmes/algoritmes-toetsingskader)
-
-[4](#sdfootnote4anc) [Publicatie Raad van State over digitalisering in wetgeving en bestuursrechtspraak - Raad van State](https://www.raadvanstate.nl/@125918/publicatie-digitalisering/)
+Voor Engelstalige informatie over The LegitiMate, kijk hier: [A cool experiment in NL: The LegitiMate. Working method to judge the use of algorithms in ADM from 3 perspectives. – Automated administrative decisions and the law](https://automatedadministrativedecisionsandthelaw.wordpress.com/2022/03/16/a-cool-experiment-in-nl-the-legitimate-working-method-to-judge-the-use-of-algorithms-in-adm-from-3-perspectives/)
