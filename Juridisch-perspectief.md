@@ -18,7 +18,7 @@ Is de uitvoering conform wet- en regelgeving, de Algemene Beginselen van Behoorl
 ## Analyse of Functioneel ontwerp
 1. Hoe worden de voor de uit te voeren taak relevante bronnen (de toepasselijke wet- en regelgeving en het uitvoeringsbeleid) verzameld?
 2. Hoe wordt de compleetheid van de verzamelde bronnen verzekerd, in het licht van de uit te voeren taak?
-3. Welke disciplines zijn betrokken bij de analyse? In hoeverre is de analyse of interpretatie afhankelijk van de persoon van de analist, komen verschillende analisten tot eenzelfde interpretatie ([=inter-coder reliability=])?
+3. Welke disciplines zijn betrokken bij de analyse? In hoeverre is de analyse of interpretatie afhankelijk van de persoon van de analist, komen verschillende analisten tot eenzelfde interpretatie ([=intercoder reliability=])?
 4. Welke ondersteunende applicaties zijn beschikbaar voor analyse en interpretatie van de bronnen en vastlegging van de resultaten daarvan?
 5. Worden bij de analyse of de interpretatie van de bronnen gemaakte keuzes expliciet vastgelegd?
 6. Worden er begrippen geïnterpreteerd uit wetten die andere overheden uitvoeren en wordt de interpretatie getoetst bij deze instanties? (Stel dat DUO een begrip uit de Rijkswet op het Nederlanderschap invult, wordt dit getoetst bij de IND?)

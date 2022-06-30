@@ -33,7 +33,7 @@ Hoe dit onderzoek het beste kan worden vormgegeven is afhankelijk van de situati
 2. Beslisregels: als beslisregels gegarandeerd ten grondslag liggen aan code, is het aan te raden de beslisregels inhoudelijk te onderzoeken. Als het aantal te groot is, kan gekeken worden naar hulpmiddelen om analyses te verrichten (zoals met e-discovery tooling).
 3. Een steekproefsgewijze inhoudelijke beoordeling van de besluiten (zonder en in combinatie met bezwaar/klachtprocedures).
 
-Het is ook denkbaar dat andere methoden hiervoor gebruikt kunnen worden om een beeld te krijgen, met behulp van data-analyse en/of [=proces mining=] of [=decision-ming=]. Dit kan in een volgende versie uitgeprobeerd worden.
+Het is ook denkbaar dat andere methoden hiervoor gebruikt kunnen worden om een beeld te krijgen, met behulp van data-analyse en/of [=process mining=] of [=decision mining=]. Dit kan in een volgende versie uitgeprobeerd worden.
 
 Daarnaast is het houden van interviews met medewerkers essentieel. Het gaat dan om medewerkers in functies die worden uitgekozen door de leden van het team.
 
