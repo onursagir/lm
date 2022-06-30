@@ -15,7 +15,7 @@ Je krijgt een representatief beeld door het onderzoek binnen het [=bereik van De
 2. een relatief lastig uit te voeren beslissingen (met veel beoordelingsruimte zoals een recht of uitzondering dat bepaald moet worden aan de hand van feiten en omstandigheden).
 
 # De Beoordelaars
-De beoordelaars zijn mensen die vanuit hun deskundigheid het onderzoek uitvoeren. De LegitiMaat is gemaakt voor drie perspectieven. Daarom wordt aangeraden wordt om het team te vormen door minstens een auditor, jurist en een collega [=IT-ontwikkelaar=]. Per deskundigheid is een specifieke vragenlijst ontwikkeld. Bij de methode hoort dat eerst een gezamenlijk beeld wordt verkregen, dan drie verschillende verdiepende onderzoeken worden verricht en tenslotte een gezamenlijk eindoordeel.
+De beoordelaars zijn mensen die vanuit hun deskundigheid het onderzoek uitvoeren. De LegitiMaat is gemaakt voor drie perspectieven. Daarom wordt aangeraden wordt om het team te vormen door minstens een auditor, jurist en een collega [=softwareontwikkelaar=]. Per deskundigheid is een specifieke vragenlijst ontwikkeld. Bij de methode hoort dat eerst een gezamenlijk beeld wordt verkregen, dan drie verschillende verdiepende onderzoeken worden verricht en tenslotte een gezamenlijk eindoordeel.
 
 De LegitiMaat is ontwikkeld als visitatie-instrument [LINK NAAR STUKJE OVER VISITATIE]. Dit houdt in dat de beoordelaars zowel medewerkers van de organisatie zelf kunnen zijn als externe deskundigen die lid zijn van een visitatieteam.
 
