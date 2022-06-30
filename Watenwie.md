@@ -2,6 +2,7 @@
 
 Als je aan de slag wil gaan met De LegitiMaat heb je nodig:
 - een beslissing over het proces dat wordt onderzocht; dus welke wet wordt uitgevoerd,
+- zekerheid dat dit proces leidt tot besluiten die individuele burgers raken (besluiten zijn volgens artikel 1:3 van de Algemene wet bestuursrecht),
 - beoordelaars,
 - documenten van de overheidsorganisatie die wordt onderzocht,
 - gesprekspartners/experts aan wie de beoordelaars vragen kunnen stellen

@@ -72,12 +72,12 @@ De regels waar we het over hebben zijn in verschillende typen in te delen: je ku
 
 Als moet worden bepaald of een aanvrager onder een bepaalde categorie valt (bv. partner), dan loop je ook een aantal variabelen in de definitie van partner af, en neem je daar dus eigenlijk een beslissing over. Het resultaat daarvan neem je dan weer mee in een volgende beslissing (bv. over recht op toeslag, studiefinanciering). Je zou dat onder een categorie vallen ook een classificatieregel kunnen noemen.
 
-Met selectieregels wordt bepaald welke besluiten mede door een ambtenaar moeten worden genomen. Soms zijn dit regels die vooraf geprogrammeerd zijn (zoals 'alle aanvragen waarin mensen een ander adres opgeven dan dat uit de Basisregistratie personen moeten gecontroleerd worden') en soms worden hierbij statistische algoritmen ingezet.
+Met selectieregels wordt bepaald welke besluiten mede door een ambtenaar moeten worden genomen. Soms zijn dit regels die vooraf geprogrammeerd zijn (zoals 'alle aanvragen waarin mensen een ander adres opgeven dan dat uit de Basisregistratie personen moeten gecontroleerd worden') en soms worden hierbij [=statistische algoritmen=] ingezet.
 
 De LegitiMaat is dus nog niet geschikt voor het afleggen van verantwoording of beoordelen van het gebruik van statistische algoritmen, inclusief [=machine learning=] die uitspraken doen over de waarschijnlijkheid van een uitkomst op basis van statistische analyse van gegevens uit het verleden. Dit kan later wel aan de orde komen.
 
-## Wat te doen bij ingekochte toepassingen?
-Om een waardering te kunnen geven is veel documentatie nodig. Ook als een overheidsorganisatie een IT-toepassing heeft ingekocht of laten ontwikkelen, blijft de publieke organisatie verantwoordelijk voor een juiste interpretatie van regelgeving en het naleven van algemene beginselen van behoorlijk bestuur. Als de documentatie niet beschikbaar kan worden gemaakt door de leverancier of deze weigert dit vanwege intellectuele eigendomsrechten, dan kan de LegitiMaat niet gebruikt worden.
-
 ## Keteneffecten
 Binnen de overheid worden veel data en systemen aan elkaar verbonden. Dit betekent dat zowel de invoer (data) als het resultaat (een besluit) relaties hebben met andere processen, andere werkvelden, andere wetten en andere instanties. Het inzicht bieden in deze relaties en beoordelen of deze uitvoering volgens de wet, ABBB en het verbod van discriminatie is, hoort ook bij De LegitiMaat.
+
+## Wat te doen bij ingekochte toepassingen?
+Om een waardering te kunnen geven is veel documentatie nodig. Ook als een overheidsorganisatie een IT-toepassing heeft ingekocht of laten ontwikkelen, blijft de publieke organisatie verantwoordelijk voor een juiste interpretatie van regelgeving en het naleven van algemene beginselen van behoorlijk bestuur. Als de documentatie niet beschikbaar kan worden gemaakt door de leverancier of deze weigert dit vanwege intellectuele eigendomsrechten, dan kan de LegitiMaat niet gebruikt worden.

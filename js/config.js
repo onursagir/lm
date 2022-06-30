@@ -53,7 +53,7 @@ var respecConfig =
 
   // this parameter will add the tag_name of the latest release to the document Title
   // only set this parameter when a release has been set
-  nl_addReleaseTagTitle: true,
+  nl_addReleaseTagTitle: false,
 
   // nl_organisationName is used for some company specific values in the header (and Sotd)
   // currently supported: Logius and Geonovum (default)  
@@ -65,7 +65,7 @@ var respecConfig =
 
   // prefix for the names of company specific css, svg and ico prefixes
   // defaults to "GN-"  
-  nl_organisationPrefix: "LS-",
+  nl_organisationPrefix: "GN-",
 
   // if nl_markdownEmbedImageInFigure is set to true images in markdown generated content will be surrounded with <figures> element
   // so that figures can be linked are be a part of table of figures

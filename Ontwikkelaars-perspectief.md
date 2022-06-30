@@ -48,7 +48,7 @@ Legt voor ieder toetssenario apart uit op welke wijze de digitale interactie pla
 | -------------------------- | ------------------------- |
 | Workflow per toetsscenario | Geen voorbeeld vooralsnog |
 
-### Brief
+## Brief
 Bij de analyse is communicatiebeleid vastgesteld voor én over(!) de oplossing(en). Hier wordt de verbinding gemaakt met de wijze waarop dat voor alle toetsscenario's is verwerkt in vaste en/of vrije tekst(en).
 
 | Willen weten                                       |                           |

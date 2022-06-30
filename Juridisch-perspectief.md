@@ -4,9 +4,6 @@ Centrale vraag in het juridisch perspectief is deze:
 
 Is de uitvoering conform wet- en regelgeving, de Algemene Beginselen van Behoorlijk Bestuur (ABBB) (LINK naar begrippenlijst) en het verbod van discriminatie?
 
-## Startvraag zodat bepaald kan worden of de geautomatiseerde uitvoering binnen het bereik (scope) van De LegitiMaat valt
-Leidt de geautomatiseerde uitvoering tot het nemen van besluiten in de zin van artikel 1:3 van de Awb?
-
 ## Wet- en regelgeving
 1. Bevat de voor de uit te voeren taak toepasselijke wet- en regelgeving een discretionaire bevoegdheid?
 2. Bevat deze wet een hardheidsclausule?
