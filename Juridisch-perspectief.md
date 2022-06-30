@@ -2,7 +2,7 @@
 
 Centrale vraag in het juridisch perspectief is deze:
 
-Is de uitvoering conform wet- en regelgeving, de Algemene Beginselen van Behoorlijk Bestuur (ABBB) (LINK naar begrippenlijst) en het verbod van discriminatie?
+Is de uitvoering conform wet- en regelgeving, de Algemene Beginselen van Behoorlijk Bestuur ([=ABBB=]) en het verbod van discriminatie?
 
 ## Wet- en regelgeving
 1. Bevat de voor de uit te voeren taak toepasselijke wet- en regelgeving een discretionaire bevoegdheid?
