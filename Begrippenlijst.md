@@ -56,7 +56,7 @@
 
 <dfn>Functioneel ontwerp</dfn> hierin worden alle eisen en wensen waaraan een product moet voldoen verzameld en geordend. Er wordt beschreven op welke manier, welke verwachten de gebruiker heeft, welke handelingen hij uitvoert en welke resultaten die oplevert.
 
-<dfn>Information Technology Infrastructure Library (ITIL)**: een referentiekader ontwikkeld voor het inrichten van de beheersprocessen binnen een ICT-organisatie.
+<dfn>Information Technology Infrastructure Library (ITIL)</dfn> een referentiekader ontwikkeld voor het inrichten van de beheersprocessen binnen een ICT-organisatie.
 
 <dfn>Uitworp/uitval/niet glad geval</dfn> bij geautomatiseerde uitvoering van wetten is het gebruikelijk dat bepaald wordt welke zaken volledig geautomatiseerd worden afgehandeld en welke zaken door een medewerker nader bekeken moeten worden. Dit bepalen wordt soms aan de hand van selectieregels [link naar begrippenlijst] gedaan.
 
