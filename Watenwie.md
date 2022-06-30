@@ -17,7 +17,7 @@ Je krijgt een representatief beeld door het onderzoek binnen het [=bereik van De
 # De Beoordelaars
 De beoordelaars zijn mensen die vanuit hun deskundigheid het onderzoek uitvoeren. De LegitiMaat is gemaakt voor drie perspectieven. Daarom wordt aangeraden wordt om het team te vormen door minstens een auditor, jurist en een collega [=softwareontwikkelaar=]. Per deskundigheid is een specifieke vragenlijst ontwikkeld. Bij de methode hoort dat eerst een gezamenlijk beeld wordt verkregen, dan drie verschillende verdiepende onderzoeken worden verricht en tenslotte een gezamenlijk eindoordeel.
 
-De LegitiMaat is ontwikkeld als visitatie-instrument [LINK NAAR STUKJE OVER VISITATIE]. Dit houdt in dat de beoordelaars zowel medewerkers van de organisatie zelf kunnen zijn als externe deskundigen die lid zijn van een visitatieteam.
+De LegitiMaat is ontwikkeld als [visitatie-instrument](#de-legitimaat-als-visitatie-instrument). Dit houdt in dat de beoordelaars zowel medewerkers van de organisatie zelf kunnen zijn als externe deskundigen die lid zijn van een visitatieteam.
 
 # De Gesprekspartners
 Om het goede gesprek te voeren is het nodig dat je spreekt met personen die een bepaalde rol vervullen. We spreken over rollen en niet over functies omdat deze niet standaard hetzelfde worden genoemd of worden ingevuld bij de overheidsorganisaties. Er zijn mensen nodig die uitleg kunnen geven over het totale en gezamenlijke beeld, en specialisten die afzonderlijk het gesprek kunnen voeren met een van de drie typen beoordelaars.
@@ -43,15 +43,15 @@ De medewerker die kan vertellen welke uitgangspunten door het bestuur richtingge
 
 De [=regelexpert=].
 
-De functionaris die beslist welke soort besluiten worden gecategoriseerd als uitworp / uitval / niet glad geval [link naar begrippenlijst].
+De functionaris die beslist welke soort besluiten worden gecategoriseerd als [=uitworp/uitval/niet glad geval=] geval.
 
-De medewerker die kan vertellen bij welke kwesties de beslisambtenaar [link naar begrippenlijst] het systeem mag overrulen.
+De medewerker die kan vertellen bij welke kwesties de [=beslisambtenaar=] het systeem mag overrulen.
 
 De juridisch medewerker die weet hoe externe signalen (vanuit de samenleving/politiek, zoals maatwerk of werken vanuit de bedoeling, of bestuursrechtelijk, zoals uitspraak RvS over evenredigheid of maatwerk, en / of interne signalen (zoals klachten/telefoontjes) leiden tot aanpassingen in het ontwikkelproces.
 
 De medewerker die weet hoe IT-aanpassingen worden geprioriteerd en weet onder welke omstandigheden de wens tot een wijziging in een bestaand systeem wordt gehonoreerd.
 
-De juridisch medewerker die procesvertegenwoordiger [LINK naar begrippenlijst] is namens het bestuursorgaan.
+De juridisch medewerker die [=procesvertegenwoordiger=] is namens het bestuursorgaan.
 
 ## Audit perspectief
-De [=interne controller=] die controleert of de uitvoering financieel rechtmatig [link begrippenlijst] is.
+De [=interne controller=] die controleert of de uitvoering financieel [=rechtmatig=] is.
