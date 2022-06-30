@@ -12,12 +12,12 @@ Een visitatie bestaat in principe uit drie fasen. De eerste fase is een zelfeval
 
 Een visitatie wordt periodiek herhaald. Een driejaarlijkse cyclus lijkt het meest effectief en efficiënt. Er is dan voldoende tijd voor een goede voorbereiding en voor implementatie van de aanbevelingen. De frequentie kan op basis van ervaringen worden bijgesteld.
 
-De beoordelaars [link naar wie en wat] in het onafhankelijk visitatieteam zijn medewerkers van een andere overheidsorganisatie, die in hun organisatie direct betrokken zijn bij de ontwikkeling en toepassing van algoritmen. Zij kunnen op grond van hun kennis en ervaring kritische vragen stellen. Bovendien kunnen ze ook weer leren van de werkwijzen en ervaringen van de organisatie die zij visiteren. Zo snijdt het mes aan twee kanten. Met het oog op objectiviteit van het visitatieteam wordt voorzien in een onafhankelijke voorzitter en secretaris (dwz. niet afkomstig uit de visiterende of te visiteren organisatie).
+De [beoordelaars](#wie-en-wat) in het onafhankelijk visitatieteam zijn medewerkers van een andere overheidsorganisatie, die in hun organisatie direct betrokken zijn bij de ontwikkeling en toepassing van algoritmen. Zij kunnen op grond van hun kennis en ervaring kritische vragen stellen. Bovendien kunnen ze ook weer leren van de werkwijzen en ervaringen van de organisatie die zij visiteren. Zo snijdt het mes aan twee kanten. Met het oog op objectiviteit van het visitatieteam wordt voorzien in een onafhankelijke voorzitter en secretaris (dwz. niet afkomstig uit de visiterende of te visiteren organisatie).
 
 Hierna worden de drie fasen beschreven.
 
 ## Fase 1 - Zelfevaluatie
-De organisatie voert de zelfevaluatie uit aan de hand van de lijst met documenten [link naar De Documenten in Wie en wat] die nodig zijn voor het onderzoek en de LegitiMaat-vragenlijsten [link]. Een coördinator zet de lijsten uit bij de betrokken onderdelen, bewaakt de voorgang en checkt de aangeleverde input op duidelijkheid e.d.
+De organisatie voert de zelfevaluatie uit aan de hand van de lijst met [documenten](#de-legitimaat-documentenlijst) die nodig zijn voor het onderzoek en de LegitiMaat [vragenlijsten](#juridisch-perspectief-vragenlijst). Een coördinator zet de lijsten uit bij de betrokken onderdelen, bewaakt de voorgang en checkt de aangeleverde input op duidelijkheid e.d.
 
 De start van de zelfevaluatie is afhankelijk van de vraag wanneer het visitatieteam het visitatiebezoek kan afleggen. Als richtlijn kan worden aangehouden dat de zelfevaluatie ca. vier weken voor het bezoek van het visitatieteam moet zijn afgerond (zie tijdschema in paragraaf 4). Dit geeft het team de tijd om het bezoek voor te bereiden. Het is van belang dat in elk geval de voorzitter en secretaris van het visitatieteam bekend zijn bij de start van de zelfevaluatie, zodat (in een kennismakingsgesprek) de termijnen met hen kunnen worden afgestemd.
 
