@@ -15,7 +15,7 @@ Bij _nieuw_ te ontwikkelen van ITsystemen kunnen zij direct zien wat zij moeten 
 De LegitiMaat is ook bedoeld voor beoordelaars. De juristen, auditors en collega-ontwikkelaars die inzicht nodig hebben en een waardering moeten geven over de manier waarop het bestuursorgaan wetten geautomatiseerd uitvoert.
 
 ## Hoe kan ik een bijdrage leveren?
-Op 1 juli 2022 is het prototype aangeboden aan het ministerie van BZK en gepubliceerd op GitHub. De werkmethode is werkende weg ontwikkeld, getest en aangepast. Meer informatie over het proces en de literatuur die is gebruikt: LINK naar PLEIO. We ontvangen graag verbeteringen! Neem contact op met: [Marlies van Eck](mailto:marlies@hooghiemstra-en-partners.nl)
+Op 1 juli 2022 is het prototype aangeboden aan het ministerie van BZK en gepubliceerd op GitHub. De werkmethode is werkende weg ontwikkeld, getest en aangepast. Meer informatie over het proces en de literatuur die is gebruikt staat op [Pleio](https://regelbeheer.pleio.nl/groups/view/7e9c261c-2200-4247-bbfb-2f97cb4e8e6d/toezicht-op-algoritmen/files). We ontvangen graag verbeteringen! Neem contact op met: [Marlies van Eck](mailto:marlies@hooghiemstra-en-partners.nl)
 
 # Een methode om te evalueren en te leren
 De LegitiMaat gaat uit van de principes van visitatie-onderzoek. Het is een [visitatie-instrument](#de-legitimaat-als-visitatie-instrument). Dit betekent dat een groot deel van het onderzoek wordt neergelegd bij de expert zelf, het bestuursorgaan.
