@@ -43,7 +43,7 @@ De medewerker die kan vertellen welke uitgangspunten door het bestuur richtingge
 
 De [=regelexpert=].
 
-De functionaris die beslist welke soort besluiten worden gecategoriseerd als [=uitworp/uitval/niet glad geval=] geval.
+De functionaris die beslist welke soort besluiten worden gecategoriseerd als [=niet glad geval=].
 
 De medewerker die kan vertellen bij welke kwesties de [=beslisambtenaar=] het systeem mag overrulen.
 
