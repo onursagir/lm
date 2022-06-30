@@ -4,11 +4,11 @@ In opdracht van het ministerie van BZK hebben experts nu De LegitiMaat ontwikkel
 
 Het gaat dus om algoritmen, maar ook om de context waarbinnen die worden gebruikt. Bij algoritmen wordt vaak gedacht aan Machine Learning (ML). De LegitiMaat ziet vooral op kennisgebaseerde algoritmen waarmee de wet wordt uitgevoerd en burgers een individueel besluit (in de zin van de Algemene wet bestuursrecht) ontvangen.
 
-Het bereik van De LegitiMaat
+_Het bereik van De LegitiMaat_
 
 De LegitiMaat gaat het om het gehele proces van wet tot aan individueel besluit en daarna, reactie van de ontvangers (telefoontjes, klachten, bezwaren) en de keteneffecten. Het is maatschappelijk zeer relevant dat dit proces beter inzichtelijk wordt. Daarmee verhogen we de transparantie. Met de LegitiMaat kan beoordeeld worden of de wetten, de algemene beginselen van behoorlijk bestuur en het verbod van discriminatie zijn nageleefd.
 
-Onderdelen van de LegitiMaat
+_Onderdelen van de LegitiMaat_
 
 De LegitiMaat bevat een analyse van de gebruikelijke stappen die worden gezet bij overheidsorganisaties. Dit is de procesplaat.
 
@@ -20,7 +20,7 @@ Op basis van de verkregen informatie en antwoorden kan een visitatieteam aan de 
 
 Met De LegitiMaat hebben we de praktijk, de technologie en het recht een stap dichter bij elkaar gebracht.
 
-Meer weten?
+_Meer weten?_
 
 Wij werkten zelf ook zo open mogelijk. Hoe de De LegitiMaat tot stand is gekomen vind je [in deze slides](https://noti.st/maikeklip/XRXDzo/slides). Documenten en literatuur staan op [Pleio](https://regelbeheer.pleio.nl/groups/view/7e9c261c-2200-4247-bbfb-2f97cb4e8e6d/toezicht-op-algoritmen/files)
 
