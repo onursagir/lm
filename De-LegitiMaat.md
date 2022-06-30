@@ -3,7 +3,7 @@
 # Introductie
 De overheid heeft veel verschillende taken. Deze taken worden bij wet toegekend aan een bestuursorgaan. Een deel van deze wettelijke taken wordt geautomatiseerd uitgevoerd met algoritmen. Denk aan het opleggen van boetes voor te hard rijden, het terugvorderen van toeslagen of het verlenen van AOW of kinderbijslag. Net als bij een meer zichtbare uitvoering van taken zoals het ophogen van dijken, is het belangrijk om te weten hoe deze processen verlopen en welke keuzen daarbij gemaakt zijn. Want ook de geautomatiseerde uitvoering van wetten is publiek handelen en moet legitiem zijn.
 
-Met de LegitiMaat kan de uitvoerende overheid verantwoording afleggen en kunnen anderen zich er een mening over vormen. De LegitiMaat is bedoeld om te _waarderen_, zodat de organisatie zich kan ontwikkelen en verbeteren. Het is een [visitatie-instrument](https://minbzk.github.io/LegitiMaat/#de-legitimaat-als-visitatie-instrument).
+Met de LegitiMaat kan de uitvoerende overheid verantwoording afleggen en kunnen anderen zich er een mening over vormen. De LegitiMaat is bedoeld om te _waarderen_, zodat de organisatie zich kan ontwikkelen en verbeteren. Het is een [visitatie-instrument](#de-legitimaat-als-visitatie-instrument).
 
 ## Voor wie is het bedoeld?
 De LegitiMaat is een werkmethode om de geautomatiseerde uitvoering van wetten door de overheid op een gestandaardiseerde manier inzichtelijk te maken en te (laten) beoordelen. De LegitiMaat gaat uit van het vakmanschap van de medewerkers bij de bestuursorganen en van de toenemende vraag in de samenleving dat de overheid rekenschap aflegt over onzichtbare processen.
