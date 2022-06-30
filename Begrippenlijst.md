@@ -46,7 +46,7 @@
 
 <dfn data-lt="Procesvertegenwoordigers|Procesvertegenwoordiger">Procesvertegenwoordigers</dfn> mensen die het bestuursorgaan vertegenwoordigen in beroep of hoger beroep bij de bestuursrechter.
 
-<dfn data-lt="Rechtmatigheid|Rechtmatig">Rechtmatigheid</dfn> het is bij de overheid gebruikelijk om een onderscheid te maken tussen juridische rechtmatigheid en financiële rechtmatigheid in het kader van controle-en verantwoording. Het juridische begrip rechtmatigheid gaat over alle geldende wetten en regels. Er wordt beoordeeld of het handelen in overeenstemming is met deze wetten en regels. Het begrip rechtmatigheid dat door de accountant voor de overheid wordt gehanteerd is beperkter. Dan gaat het om een directe relatie met het financiële beheer. In de LegitiMaat geven we daarom steeds aan welke vorm van rechtmatigheid we bedoelen.
+<dfn data-lt="Rechtmatigheid|Rechtmatig|Rechtmatige besluiten">Rechtmatigheid</dfn> het is bij de overheid gebruikelijk om een onderscheid te maken tussen juridische rechtmatigheid en financiële rechtmatigheid in het kader van controle-en verantwoording. Het juridische begrip rechtmatigheid gaat over alle geldende wetten en regels. Er wordt beoordeeld of het handelen in overeenstemming is met deze wetten en regels. Het begrip rechtmatigheid dat door de accountant voor de overheid wordt gehanteerd is beperkter. Dan gaat het om een directe relatie met het financiële beheer. In de LegitiMaat geven we daarom steeds aan welke vorm van rechtmatigheid we bedoelen.
 
 <dfn>Regelexpert</dfn> medewerker die wetten vertaalt in regels.
 
