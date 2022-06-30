@@ -1,4 +1,4 @@
-# Juridisch perspectief Vragenlijst
+# Juridisch perspectief vragenlijst
 
 Centrale vraag in het juridisch perspectief is deze:
 
