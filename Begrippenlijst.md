@@ -58,7 +58,7 @@
 
 <dfn>Information Technology Infrastructure Library (ITIL)</dfn> een referentiekader ontwikkeld voor het inrichten van de beheersprocessen binnen een ICT-organisatie.
 
-<dfn>Uitworp/uitval/niet glad geval</dfn> bij geautomatiseerde uitvoering van wetten is het gebruikelijk dat bepaald wordt welke zaken volledig geautomatiseerd worden afgehandeld en welke zaken door een medewerker nader bekeken moeten worden. Dit bepalen wordt soms aan de hand van selectieregels [link naar begrippenlijst] gedaan.
+<dfn data-lt="Uitworp|Uitval|Niet glad geval">Uitworp/uitval/niet glad geval</dfn> bij geautomatiseerde uitvoering van wetten is het gebruikelijk dat bepaald wordt welke zaken volledig geautomatiseerd worden afgehandeld en welke zaken door een medewerker nader bekeken moeten worden. Dit bepalen wordt soms aan de hand van selectieregels [link naar begrippenlijst] gedaan.
 
 <dfn>Selectieregels</dfn> met selectieregels kan worden geselecteerd welke zaken geautomatiseerd worden afgehandeld en welke door een medewerker moeten worden bekeken.
 
