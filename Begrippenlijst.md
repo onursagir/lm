@@ -44,7 +44,7 @@
 
 <dfn>Valideren</dfn> iets geldig verklaren.
 
-<dfn>Procesvertegenwoordigers</dfn> mensen die het bestuursorgaan vertegenwoordigen in beroep of hoger beroep bij de bestuursrechter.
+<dfn data-lt="Procesvertegenwoordigers|Procesvertegenwoordiger">Procesvertegenwoordigers</dfn> mensen die het bestuursorgaan vertegenwoordigen in beroep of hoger beroep bij de bestuursrechter.
 
 <dfn>Regelexpert</dfn> medewerker die wetten vertaalt in regels.
 
@@ -62,7 +62,7 @@
 
 <dfn>Selectieregels</dfn> met selectieregels kan worden geselecteerd welke zaken geautomatiseerd worden afgehandeld en welke door een medewerker moeten worden bekeken.
 
-<dfn>Rechtmatigheid</dfn> het is bij de overheid gebruikelijk om een onderscheid te maken tussen juridische rechtmatigheid en financiële rechtmatigheid in het kader van controle-en verantwoording. Het juridische begrip rechtmatigheid gaat over alle geldende wetten en regels. Er wordt beoordeeld of het handelen in overeenstemming is met deze wetten en regels. Het begrip rechtmatigheid dat door de accountant voor de overheid wordt gehanteerd is beperkter. Dan gaat het om een directe relatie met het financiële beheer. In de LegitiMaat geven we daarom steeds aan welke vorm van rechtmatigheid we bedoelen.
+<dfn data-lt="Rechtmatigheid|Rechtmatig">Rechtmatigheid</dfn> het is bij de overheid gebruikelijk om een onderscheid te maken tussen juridische rechtmatigheid en financiële rechtmatigheid in het kader van controle-en verantwoording. Het juridische begrip rechtmatigheid gaat over alle geldende wetten en regels. Er wordt beoordeeld of het handelen in overeenstemming is met deze wetten en regels. Het begrip rechtmatigheid dat door de accountant voor de overheid wordt gehanteerd is beperkter. Dan gaat het om een directe relatie met het financiële beheer. In de LegitiMaat geven we daarom steeds aan welke vorm van rechtmatigheid we bedoelen.
 
 <dfn>Keteneffecten</dfn> Binnen de overheid worden veel data en systemen aan elkaar verbonden. Dit betekent dat zowel de invoer (data) als het resultaat (een besluit) relaties hebben met andere processen, andere werkvelden, andere wetten en andere instanties. Het inzicht bieden in deze relaties en beoordelen of deze uitvoering volgens de wet, ABBB en het verbod van discriminatie is, hoort ook bij De LegitiMaat.
 

@@ -15,12 +15,12 @@ Bij _nieuw_ te ontwikkelen van ITsystemen kunnen zij direct zien wat zij moeten 
 De LegitiMaat is ook bedoeld voor beoordelaars. De juristen, auditors en collega-ontwikkelaars die inzicht nodig hebben en een waardering moeten geven over de manier waarop het bestuursorgaan wetten geautomatiseerd uitvoert.
 
 ## Hoe kan ik een bijdrage leveren?
-Op 1 juli 2022 is het prototype aangeboden aan het ministerie van BZK en gepubliceerd op GitHub. De werkmethode is werkende weg ontwikkeld, getest en aangepast. Meer informatie over het proces en de literatuur die is gebruikt: LINK naar PLEIO. We ontvangen graag verbeteringen! Neem contact op met: XXX
+Op 1 juli 2022 is het prototype aangeboden aan het ministerie van BZK en gepubliceerd op GitHub. De werkmethode is werkende weg ontwikkeld, getest en aangepast. Meer informatie over het proces en de literatuur die is gebruikt: LINK naar PLEIO. We ontvangen graag verbeteringen! Neem contact op met: [Marlies van Eck](mailto:marlies@hooghiemstra-en-partners.nl)
 
 # Een methode om te evalueren en te leren
-De LegitiMaat gaat uit van de principes van visitatie-onderzoek. Het is een visitatie-instrument [LINK naar stuk over visitatie]. Dit betekent dat een groot deel van het onderzoek wordt neergelegd bij de expert zelf, het bestuursorgaan.
+De LegitiMaat gaat uit van de principes van visitatie-onderzoek. Het is een [visitatie-instrument](#de-legitimaat-als-visitatie-instrument). Dit betekent dat een groot deel van het onderzoek wordt neergelegd bij de expert zelf, het bestuursorgaan.
 
-In De LegitiMaat wordt aangegeven welke documenten nodig zijn, de LegitiMaat documentenlijst [LINK naar wat en wie] en welke vragen vooraf beantwoord moeten worden, de LegitiMaat vragenlijsten [link naar de vragenlijsten].
+In De LegitiMaat wordt aangegeven welke documenten nodig zijn, de LegitiMaat [documentenlijst](#de-legitimaat-documentenlijst) en welke vragen vooraf beantwoord moeten worden, de LegitiMaat [vragenlijsten](#juridisch-perspectief-vragenlijst).
 
 Het visitatie-team dat vervolgens aan de slag gaat, zal interviews houden en steekproeven nemen.
 
@@ -35,7 +35,7 @@ Met De LegitiMaat kan:
 - een accountant of interne controller een uitspraak doen over de financiële [=rechtmatigheid=] van de geautomatiseerde uitvoering.
 
 ## Relatie met andere initiatieven
-Er gebeurt van alles op het terrein van algoritmen bij de overheid. Zo wordt er gewerkt aan een algoritmeregister en hanteert de overheid een open source beleid [LINK naar begrippenlijst] Ook wordt steeds vaker over toezicht op algoritmen gesproken. Maar een beoordeling kan pas gegeven worden als de overheidsorganisatie eerst zelf inzicht heeft in het eigen complexe en zeer (wets)technische proces.
+Er gebeurt van alles op het terrein van algoritmen bij de overheid. Zo wordt er gewerkt aan een algoritmeregister en hanteert de overheid een [=open source beleid=]. Ook wordt steeds vaker over toezicht op algoritmen gesproken. Maar een beoordeling kan pas gegeven worden als de overheidsorganisatie eerst zelf inzicht heeft in het eigen complexe en zeer (wets)technische proces.
 
 # Hoe worden wetten geautomatiseerd uitgevoerd?
 Als de overheid besluiten neemt in individuele gevallen waarbij het gaat om grote aantallen en veel vergelijkbare repeterende taken, gaat dit vaak geautomatiseerd. Hiervoor moet de wet vertaald worden en moet bepaald worden hoe de wet wordt uitgevoerd. Na gesprekken met de professionals hebben we dit proces in de volgende stappen onderscheiden.
