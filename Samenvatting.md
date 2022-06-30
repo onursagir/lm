@@ -22,6 +22,6 @@ Met De LegitiMaat hebben we de praktijk, de technologie en het recht een stap di
 
 Meer weten?
 
-Wij werkten zelf ook zo open mogelijk. Hoe de De LegitiMaat tot stand is gekomen vind je [De Legitimaat (noti.st)](https://noti.st/maikeklip/XRXDzo/slides). Documenten en literatuur staan op Pleio [https://regelbeheer.pleio.nl/groups/view/7e9c261c-2200-4247-bbfb-2f97cb4e8e6d/toezicht-op-algoritmen/files](https://regelbeheer.pleio.nl/groups/view/7e9c261c-2200-4247-bbfb-2f97cb4e8e6d/toezicht-op-algoritmen/files)
+Wij werkten zelf ook zo open mogelijk. Hoe de De LegitiMaat tot stand is gekomen vind je [in deze slides](https://noti.st/maikeklip/XRXDzo/slides). Documenten en literatuur staan op [Pleio](https://regelbeheer.pleio.nl/groups/view/7e9c261c-2200-4247-bbfb-2f97cb4e8e6d/toezicht-op-algoritmen/files)
 
-Voor Engelstalige informatie over The LegitiMate, kijk hier: [A cool experiment in NL: The LegitiMate. Working method to judge the use of algorithms in ADM from 3 perspectives. – Automated administrative decisions and the law (wordpress.com)](https://automatedadministrativedecisionsandthelaw.wordpress.com/2022/03/16/a-cool-experiment-in-nl-the-legitimate-working-method-to-judge-the-use-of-algorithms-in-adm-from-3-perspectives/)
+Voor Engelstalige informatie over The LegitiMate, kijk hier: [A cool experiment in NL: The LegitiMate. Working method to judge the use of algorithms in ADM from 3 perspectives. – Automated administrative decisions and the law](https://automatedadministrativedecisionsandthelaw.wordpress.com/2022/03/16/a-cool-experiment-in-nl-the-legitimate-working-method-to-judge-the-use-of-algorithms-in-adm-from-3-perspectives/)

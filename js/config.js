@@ -2,7 +2,7 @@ var respecConfig =
 {
   specStatus: "DEF",
   specType: "HR",
-  pubDomain: "lm",
+  // pubDomain: "lm",
   subtitle: "Een werkmethode voor het doen van onderzoek door derden naar het gebruik van algoritmen door een overheidsorganisatie.",
   shortName: "delegitimaat",
   publishDate: "2022-07-01",
