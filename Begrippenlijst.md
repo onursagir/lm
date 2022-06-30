@@ -12,9 +12,9 @@
 
 <dfn>Broncode (source code)</dfn> de originele tekst waaruit de software voorkomt. Dit is een voor programmeurs leesbare tekst en bevat de programma-instructies over de werking van de functionaliteit van de code.
 
-<dfn>Statistische algoritmen</dfn> GIULIA
+<dfn>Statistische algoritmen</dfn> Een statistisch algoritme is een ML algoritme dat op basis van trainingsdata een voorspelling maakt voor nieuwe data. Deze voorspelling is een kansberekening en geeft de kans weer dat een bepaalde situatie zich voor zal doen. Dit kan gebaseerd zijn op data uit het verleden, maar ook op data uit vergelijkbare situaties.
 
-<dfn>Machine learning</dfn> GIULIA
+<dfn>Machine learning</dfn> Een machine learning (ML) algoritme moet worden getraind met een dataset. Het trainen houdt in dat het ML algoritme deze dataset analyseert en leert patronen en correlaties in deze dataset herkennen. Na het trainen, is het ML algoritme in staat de geleerde patronen en correlaties toe te passen op een nieuwe (onbekende) dataset. Doorgaans moeten ML algoritmes op grote hoeveelheden data getraind worden voordat zij accurate patronen en correlaties kunnen herkennen.
 
 <dfn>ABBB</dfn> de Algemene beginselen van behoorlijk bestuur (**on)geschreven regels waar de overheid en ambtenaren zich aan moeten houden bij handelingen en besluiten.
 
@@ -38,7 +38,7 @@
 
 <dfn>Uitvoeringsbeleid</dfn> Consistente gedragslijn die is neergelegd in interne werkinstructies en waarin wordt bepaald hoe wordt omgegaan met bepaalde gevallen en hoe de beoordelingsruimte wordt ingevuld.
 
-<dfn>Inter-coder reliability</dfn> STEVEN
+<dfn>Intercoder reliability</dfn> In de context van kwantitatief onderzoek is intercoder reliability de mate waarin 2 verschillende onderzoekers het eens zijn over het coderen van dezelfde inhoud. Het zorgt ervoor dat wanneer meerdere onderzoekers een set gegevens coderen, ze tot dezelfde conclusies komen.
 
 <dfn>Verfiëren</dfn> onderzoeken of iets juist is.
 
@@ -46,11 +46,11 @@
 
 <dfn>Procesvertegenwoordigers</dfn> mensen die het bestuursorgaan vertegenwoordigen in beroep of hoger beroep bij de bestuursrechter.
 
-<dfn>Regelexpert</dfn> medewerker die wetten vertaalt in regels
+<dfn>Regelexpert</dfn> medewerker die wetten vertaalt in regels.
 
 <dfn>Repository</dfn> een ICT/-architectenterm voor een bewaarplaats of magazijn.
 
-<dfn>IT-ontwikkelaar</dfn> STEVEN
+<dfn>Softwareontwikkelaar</dfn> een persoon die zich bezighoudt met het programmeren van software. Een softwareontwikkelaar wordt ook wel programmeur, computerprogrammeur of applicatieontwikkelaar genoemd.
 
 <dfn>Auditor</dfn> iemand die zich beroepsmatig bezighoudt met het controleren van een organisatie volgens een vaste methodiek.
 
