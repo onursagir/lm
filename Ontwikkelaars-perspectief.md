@@ -19,16 +19,16 @@ Beschrijft de mapping van de gehele set aan beslisregels op de bij de analyse ge
 ## Functioneel ontwerp
 Speciale aandacht hierbij voor de plek(ken) waar de functionaliteiten waarmee de gebruikers- en beleidsscenario's bij de analyse hierboven worden ondersteund en uitgevoerd zijn beschreven.
 
-- Is dat (het/een) Functioneel Ontwerp? Of kent de organisatie een andere vorm?
-- Welke FO's kent de organisatie? Voorbeelden:
+1. Is dat (het/een) Functioneel Ontwerp? Of kent de organisatie een andere vorm?
+2. Welke FO's kent de organisatie? Voorbeelden:
   - algemeen functioneel ontwerp​
   - logisch gegevens model​
   - mens machine interface ​
   - functioneel invoer proces​
   - functioneel uitvoer proces
-- Hoe worden wijzigingen t.o.v. vorige versie(s) bijgehouden?
-- Als er beslissingen genomen worden die het betreffende functioneel ontwerp aangaan dan wordt die beslissing bij voorkeur gedocumenteerd. Is dat zichtbaar?
-- Beschrijft tenslotte de mapping van de gehele set aan testgevallen op de beslisregels. Dus voor elke beslisregelset is duidelijk welke testgevallen relevant zijn voor díe specifieke beslisregelset.
+3. Hoe worden wijzigingen t.o.v. vorige versie(s) bijgehouden?
+4. Als er beslissingen genomen worden die het betreffende functioneel ontwerp aangaan dan wordt die beslissing bij voorkeur gedocumenteerd. Is dat zichtbaar?
+5. Beschrijft tenslotte de mapping van de gehele set aan testgevallen op de beslisregels. Dus voor elke beslisregelset is duidelijk welke testgevallen relevant zijn voor díe specifieke beslisregelset.
 
 | Willen weten                              |                                                                                                                                                                                                                   |
 | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,8 +47,6 @@ Legt voor ieder toetssenario apart uit op welke wijze de digitale interactie pla
 | Willen weten               |                           |
 | -------------------------- | ------------------------- |
 | Workflow per toetsscenario | Geen voorbeeld vooralsnog |
-
-_Toelichting:_
 
 ### Brief
 Bij de analyse is communicatiebeleid vastgesteld voor én over(!) de oplossing(en). Hier wordt de verbinding gemaakt met de wijze waarop dat voor alle toetsscenario's is verwerkt in vaste en/of vrije tekst(en).
