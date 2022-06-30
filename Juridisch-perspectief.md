@@ -66,5 +66,5 @@ Is de uitvoering conform wet- en regelgeving, de Algemene Beginselen van Behoorl
 
 ## Keteneffecten
 1. Is in kaart gebracht welke instanties ('third-party decision recipient') geïnformeerd worden over het besluit en hoe dit plaats vindt (door uitwisseling van gegevens/verwijsindex/toegang verlenen tot databases)?
-2. Wordt het besluit al doorgegeven terwijl deze nog niet in rechte vast staat en dus vernietigd kan worden?
+2. Wordt het besluit al doorgegeven terwijl deze nog niet in rechte vast staat en dus [=vernietigd=] kan worden?
 3. Worden wijzigingen met terugwerkende kracht (vanwege de vernietiging van een besluit) doorgegeven?

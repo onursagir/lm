@@ -68,4 +68,6 @@
 
 <dfn>Verfiëren</dfn> onderzoeken of iets juist is.
 
+<dfn>Vernietigd</dfn> als een besluit bij de burger bekend is, kan de burger binnen 6 weken in bezwaar gaan. Krijgt de burger gelijk, dan wordt het besluit soms vernietigd: het bestaat juridisch dan niet meer. Ook de rechter kan het besluit vernietigen. Een besluit is dus in ieder geval tijdens zes weken niet definitief. Is er bezwaar gemaakt, dan staat het besluit niet in rechte vast totdat de beslissing op bezwaar is genomen. Of tot de rechter uitspraak heeft gedaan.
+
 <dfn>Voorbereidingshandelingen</dfn> Op grond van de Awb leidt een aanvraag tot een besluit. Om tot dit besluit te komen worden voorbereidingshandelingen verricht. Een deel van het proces dat met De LegitiMaat wordt getoetst, valt samen met deze voorbereidingshandelingen.
