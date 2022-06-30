@@ -20,7 +20,7 @@
 
 <dfn>Beslisregels</dfn> de waarmee variabelen worden getoetst op waar/niet waar, waarna het tot een beslissing komt.
 
-<dfn>Broncode (source code)</dfn> de originele tekst waaruit de software voorkomt. Dit is een voor programmeurs leesbare tekst en bevat de programma-instructies over de werking van de functionaliteit van de code.
+<dfn data-lt="Broncode|Broncode (source code)|source code">Broncode (source code)</dfn> de originele tekst waaruit de software voorkomt. Dit is een voor programmeurs leesbare tekst en bevat de programma-instructies over de werking van de functionaliteit van de code.
 
 <dfn>Decision mining</dfn> techniek waarbij aan de hand van de resultaten, de besluiten, kan worden geanalyseerd langs welke routines de besluiten feitelijk zijn genomen.
 
@@ -40,7 +40,7 @@
 
 <dfn>Machine learning</dfn> Een machine learning (ML) algoritme moet worden getraind met een dataset. Het trainen houdt in dat het ML algoritme deze dataset analyseert en leert patronen en correlaties in deze dataset herkennen. Na het trainen, is het ML algoritme in staat de geleerde patronen en correlaties toe te passen op een nieuwe (onbekende) dataset. Doorgaans moeten ML algoritmes op grote hoeveelheden data getraind worden voordat zij accurate patronen en correlaties kunnen herkennen.
 
-<dfn>Open source beleid</dfn> beleid waarin is bepaald dat de broncode [LINK NAAR BRONCODE] vrij beschikbaar is. Iedereen kan de broncode lezen, aanpassen en verspreiden.
+<dfn>Open source beleid</dfn> beleid waarin is bepaald dat de [=broncode=] vrij beschikbaar is. Iedereen kan de broncode lezen, aanpassen en verspreiden.
 
 <dfn>Process mining</dfn> techniek om met behulp van event logs in applicaties processen te visualiseren en te analyseren. Het is een objectief, op feiten gebaseerd hulpmiddel is om processen te analyseren en te verbeteren.
 
@@ -62,7 +62,7 @@
 
 <dfn>Uitvoeringsbeleid</dfn> Consistente gedragslijn die is neergelegd in interne werkinstructies en waarin wordt bepaald hoe wordt omgegaan met bepaalde gevallen en hoe de beoordelingsruimte wordt ingevuld.
 
-<dfn data-lt="Uitworp|Uitval|Niet glad geval">Uitworp/uitval/niet glad geval</dfn> bij geautomatiseerde uitvoering van wetten is het gebruikelijk dat bepaald wordt welke zaken volledig geautomatiseerd worden afgehandeld en welke zaken door een medewerker nader bekeken moeten worden. Dit bepalen wordt soms aan de hand van selectieregels [link naar begrippenlijst] gedaan.
+<dfn data-lt="Uitworp|Uitval|Niet glad geval">Uitworp/uitval/niet glad geval</dfn> bij geautomatiseerde uitvoering van wetten is het gebruikelijk dat bepaald wordt welke zaken volledig geautomatiseerd worden afgehandeld en welke zaken door een medewerker nader bekeken moeten worden. Dit bepalen wordt soms aan de hand van [=selectieregels=] gedaan.
 
 <dfn>Valideren</dfn> iets geldig verklaren.
 
