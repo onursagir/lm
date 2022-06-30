@@ -1,0 +1,1456 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+<meta name="generator" content="ReSpec 32.1.10 Logius profile 20220628">
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+  
+  
+  
+<title>De LegitiMaat</title>
+  
+  
+<link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
+  
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+code{color:#c63501}
+th code{color:inherit}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<style>
+ul.index{columns:30ch;column-gap:1.5em}
+ul.index li{list-style:inherit}
+ul.index li span{color:inherit;cursor:pointer;white-space:normal}
+#index-defined-here ul.index li{font-size:.9rem}
+ul.index code{color:inherit}
+#index-defined-here .print-only{display:none}
+@media print{
+#index-defined-here .print-only{display:initial}
+}
+</style>
+<meta name="description" content="De overheid heeft veel verschillende taken. Deze taken worden bij wet toegekend aan een bestuursorgaan. Een deel van deze wettelijke taken wordt geautomatiseerd uitgevoerd met algoritmen. Denk aan het opleggen van boetes voor te hard rijden, het terugvorderen van toeslagen of het verlenen van AOW of kinderbijslag. Net als bij een meer zichtbare uitvoering van taken zoals het ophogen van dijken, is het belangrijk om te weten hoe deze processen verlopen en welke keuzen daarbij gemaakt zijn. Want ook de geautomatiseerde uitvoering van wetten is publiek handelen en moet legitiem zijn.">
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specStatus": "DEF",
+  "specType": "HR",
+  "pubDomain": "lm",
+  "subtitle": "Een werkmethode voor het doen van onderzoek door derden naar het gebruik van algoritmen door een overheidsorganisatie.",
+  "shortName": "delegitimaat",
+  "publishDate": "2022-07-01",
+  "publishVersion": "1.0.0",
+  "previousPublishVersion": "",
+  "previousPublishDate": "",
+  "editors": [
+    {
+      "name": "Mildo Staden",
+      "mailto": "Mildo.Staden@minbzk.nl",
+      "company": "BZK",
+      "companyURL": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "url": "mailto:Mildo.Staden@minbzk.nl"
+    },
+    {
+      "name": "Marlies van Eck",
+      "mailto": "marlies@hooghiemstra-en-partners.nl",
+      "company": "Hooghiemstra & Partners",
+      "companyURL": "https://hooghiemstra-en-partners.nl",
+      "url": "mailto:marlies@hooghiemstra-en-partners.nl"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Marlies van Eck",
+      "url": "https://hooghiemstra-en-partners.nl"
+    },
+    {
+      "name": "Mariette Lokin",
+      "url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-financien"
+    },
+    {
+      "name": "Maike Klip",
+      "url": "https://www.nationaleombudsman.nl/"
+    },
+    {
+      "name": "Giulia Bössenecker",
+      "url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties"
+    },
+    {
+      "name": "Carlijn Oldeman",
+      "url": "https://hooghiemstra-en-partners.nl"
+    },
+    {
+      "name": "Robert van Doesburg",
+      "url": "https://www.tno.nl"
+    },
+    {
+      "name": "Abram Klop",
+      "url": "https://www.ubrijk.nl/service/i-interim-rijk"
+    },
+    {
+      "name": "Steven Gort",
+      "url": "https://www.ictu.nl"
+    }
+  ],
+  "github": "https://github.com/MinBZK/LegitiMaat",
+  "addSectionLinks": true,
+  "nl_addReleaseTagTitle": false,
+  "nl_organisationName": "MinBZK",
+  "nl_organisationStylesURL": "https://publicatie.centrumvoorstandaarden.nl/respec/style/",
+  "nl_organisationPrefix": "LS-",
+  "nl_markdownEmbedImageInFigure": true,
+  "nl_organisationPublishURL": "https://open-regels.nl/",
+  "nl_logo": {
+    "src": "https://open-regels.nl/assets/images/delegitimaat.png",
+    "alt": "LegitiMaat-logo",
+    "id": "MinBZK",
+    "height": 150,
+    "width": 150,
+    "url": "https://open-regels.nl"
+  },
+  "xref": true,
+  "localBiblio": {
+    "SemVer": {
+      "href": "https://semver.org",
+      "title": "Semantic Versioning 2.0.0",
+      "authors": [
+        "T. Preston-Werner"
+      ],
+      "date": "June 2013"
+    }
+  },
+  "publishISODate": "2022-07-01T00:00:00.000Z",
+  "generatedSubtitle": "Vastgestelde versie 01 juli 2022"
+}</script>
+<link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-VG.css"></head>
+
+<body class="h-entry toc-inline"><div class="head">
+    <a class="logo" href="https://open-regels.nl"><img alt="LegitiMaat-logo" height="150" id="MinBZK" src="https://open-regels.nl/assets/images/delegitimaat.png" width="150">
+  </a> <h1 id="title" class="title">De LegitiMaat</h1>
+    <h2 id="subtitle" class="subtitle">Een werkmethode voor het doen van onderzoek door derden naar het gebruik van algoritmen door een overheidsorganisatie.</h2>
+    <h2>
+      MinBZK Handreiking<br>
+      Vastgestelde versie
+      <time class="dt-published" datetime="2022-07-01">01 juli 2022</time>
+    </h2>
+    <dl>
+      <dt>Deze versie:</dt><dd class="status">
+              <a class="u-url status" href="https://open-regels.nl/lm/delegitimaat/1.0.0">https://open-regels.nl/lm/delegitimaat/1.0.0</a>
+            </dd><dt>Laatst gepubliceerde versie:</dt><dd>
+              <a href="https://open-regels.nl/lm/delegitimaat/">https://open-regels.nl/lm/delegitimaat/</a>
+            </dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://minbzk.github.io/LegitiMaat/">https://minbzk.github.io/LegitiMaat/</a></dd>
+      
+      
+      
+      
+      
+      <dt>Redacteurs:</dt>
+      <dd class="editor p-author h-card vcard">
+    <a class="ed_mailto u-email email p-name" href="mailto:Mildo.Staden@minbzk.nl">Mildo Staden</a> (<a class="p-org org h-org" href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties">BZK</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="ed_mailto u-email email p-name" href="mailto:marlies@hooghiemstra-en-partners.nl">Marlies van Eck</a> (<a class="p-org org h-org" href="https://hooghiemstra-en-partners.nl">Hooghiemstra &amp; Partners</a>)
+  </dd>
+      
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://hooghiemstra-en-partners.nl">Marlies van Eck</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://www.rijksoverheid.nl/ministeries/ministerie-van-financien">Mariette Lokin</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://www.nationaleombudsman.nl/">Maike Klip</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties">Giulia Bössenecker</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://hooghiemstra-en-partners.nl">Carlijn Oldeman</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://www.tno.nl">Robert van Doesburg</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://www.ubrijk.nl/service/i-interim-rijk">Abram Klop</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://www.ictu.nl">Steven Gort</a>
+  </dd>
+      <dt>Doe mee:</dt><dd>
+    <a href="https://github.com/MinBZK/LegitiMaat/">GitHub MinBZK/LegitiMaat</a>
+  </dd><dd>
+    <a href="https://github.com/MinBZK/LegitiMaat/issues/">Dien een melding in</a>
+  </dd><dd>
+    <a href="https://github.com/MinBZK/LegitiMaat/commits/">Revisiehistorie</a>
+  </dd><dd>
+    <a href="https://github.com/MinBZK/LegitiMaat/pulls/">Pull requests</a>
+  </dd>
+    </dl>
+    
+    
+    
+    <p class="copyright" lang="en">
+          This document is licensed under a
+          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.
+        </p>
+    <hr title="Separator for header">
+  </div>
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>De overheid heeft veel verschillende taken. Deze taken worden bij wet toegekend aan een bestuursorgaan. Een deel van deze wettelijke taken wordt geautomatiseerd uitgevoerd met algoritmen. Denk aan het opleggen van boetes voor te hard rijden, het terugvorderen van toeslagen of het verlenen van AOW of kinderbijslag. Net als bij een meer zichtbare uitvoering van taken zoals het ophogen van dijken, is het belangrijk om te weten hoe deze processen verlopen en welke keuzen daarbij gemaakt zijn. Want ook de geautomatiseerde uitvoering van wetten is publiek handelen en moet legitiem zijn.</p>
+<p>In opdracht van het ministerie van BZK hebben experts nu De LegitiMaat ontwikkeld. Dit is een visitatie-instrument om de geautomatiseerde uitvoering van wetten door de overheid op een gestandaardiseerde manier inzichtelijk te maken en te (laten) beoordelen. De De LegitiMaat gaat uit van drie perspectieven: juridisch, ontwikkel en accountperspectief.</p>
+<p>Het gaat dus om algoritmen, maar ook om de context waarbinnen die worden gebruikt. Bij algoritmen wordt vaak gedacht aan Machine Learning (ML). De LegitiMaat ziet vooral op kennisgebaseerde algoritmen waarmee de wet wordt uitgevoerd en burgers een individueel besluit (in de zin van de Algemene wet bestuursrecht) ontvangen.</p>
+<p><em>Het bereik van De LegitiMaat</em></p>
+<p>De LegitiMaat gaat het om het gehele proces van wet tot aan individueel besluit en daarna, reactie van de ontvangers (telefoontjes, klachten, bezwaren) en de keteneffecten. Het is maatschappelijk zeer relevant dat dit proces beter inzichtelijk wordt. Daarmee verhogen we de transparantie. Met de LegitiMaat kan beoordeeld worden of de wetten, de algemene beginselen van behoorlijk bestuur en het verbod van discriminatie zijn nageleefd.</p>
+<p><em>Onderdelen van de LegitiMaat</em></p>
+<p>De LegitiMaat bevat een analyse van de gebruikelijke stappen die worden gezet bij overheidsorganisaties. Dit is de procesplaat.</p>
+<p>Aan de hand van de procesplaat is er een Documentenlijst gemaakt. Dit zijn de documenten die nodig zijn voor het onderzoek.</p>
+<p>Dan zijn vragenlijsten aan de hand van de procesplaat. Deze kunnen door de overheidsorganisatie zelf worden beantwoord.</p>
+<p>Op basis van de verkregen informatie en antwoorden kan een visitatieteam aan de slag.</p>
+<p>Met De LegitiMaat hebben we de praktijk, de technologie en het recht een stap dichter bij elkaar gebracht.</p>
+<p><em>Meer weten?</em></p>
+<p>Wij werkten zelf ook zo open mogelijk. Hoe de De LegitiMaat tot stand is gekomen vind je <a href="https://noti.st/maikeklip/XRXDzo/slides">in deze slides</a>. Documenten en literatuur staan op <a href="https://regelbeheer.pleio.nl/groups/view/7e9c261c-2200-4247-bbfb-2f97cb4e8e6d/toezicht-op-algoritmen/files">Pleio</a></p>
+<p>Voor Engelstalige informatie over The LegitiMate, kijk hier: <a href="https://automatedadministrativedecisionsandthelaw.wordpress.com/2022/03/16/a-cool-experiment-in-nl-the-legitimate-working-method-to-judge-the-use-of-algorithms-in-adm-from-3-perspectives/">A cool experiment in NL: The LegitiMate. Working method to judge the use of algorithms in ADM from 3 perspectives. – Automated administrative decisions and the law</a></p>
+</section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2>Dit is de definitieve versie van de  handreiking. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.<p></p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#de-legitimaat"><bdi class="secno">1. </bdi>De LegitiMaat</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1.1 </bdi>Introductie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#voor-wie-is-het-bedoeld"><bdi class="secno">1.1.1 </bdi>Voor wie is het bedoeld?</a></li><li class="tocline"><a class="tocxref" href="#hoe-kan-ik-een-bijdrage-leveren"><bdi class="secno">1.1.2 </bdi>Hoe kan ik een bijdrage leveren?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#een-methode-om-te-evalueren-en-te-leren"><bdi class="secno">1.2 </bdi>Een methode om te evalueren en te leren</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#interdisciplinair-en-generiek"><bdi class="secno">1.2.1 </bdi>Interdisciplinair en generiek</a></li><li class="tocline"><a class="tocxref" href="#relatie-met-andere-initiatieven"><bdi class="secno">1.2.2 </bdi>Relatie met andere initiatieven</a></li></ol></li><li class="tocline"><a class="tocxref" href="#hoe-worden-wetten-geautomatiseerd-uitgevoerd"><bdi class="secno">1.3 </bdi>Hoe worden wetten geautomatiseerd uitgevoerd?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geautomatiseerde-besluiten-of-beslissingsondersteuning"><bdi class="secno">1.3.1 </bdi>Geautomatiseerde besluiten of beslissingsondersteuning?</a></li><li class="tocline"><a class="tocxref" href="#over-wettelijke-regels-regels-en-algoritmen"><bdi class="secno">1.3.2 </bdi>Over wettelijke regels, regels en algoritmen</a></li><li class="tocline"><a class="tocxref" href="#over-algoritmen-en-source-code"><bdi class="secno">1.3.3 </bdi>Over algoritmen en source code</a></li><li class="tocline"><a class="tocxref" href="#het-bereik-van-de-legitimaat"><bdi class="secno">1.3.4 </bdi>Het bereik van De LegitiMaat</a></li><li class="tocline"><a class="tocxref" href="#keteneffecten"><bdi class="secno">1.3.5 </bdi>Keteneffecten</a></li><li class="tocline"><a class="tocxref" href="#wat-te-doen-bij-ingekochte-toepassingen"><bdi class="secno">1.3.6 </bdi>Wat te doen bij ingekochte toepassingen?</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#de-legitimaat-als-visitatie-instrument"><bdi class="secno">2. </bdi>De LegitiMaat als visitatie-instrument</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visitatie"><bdi class="secno">2.1 </bdi>Visitatie</a></li><li class="tocline"><a class="tocxref" href="#hoe-verloopt-een-visitatie"><bdi class="secno">2.2 </bdi>Hoe verloopt een visitatie?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#fase-1-zelfevaluatie"><bdi class="secno">2.2.1 </bdi>Fase 1 - Zelfevaluatie</a></li><li class="tocline"><a class="tocxref" href="#fase-2-bezoek-visitatieteam-proof-of-the-pudding"><bdi class="secno">2.2.2 </bdi>Fase 2 - Bezoek visitatieteam: proof of the pudding</a></li><li class="tocline"><a class="tocxref" href="#fase-3-uitvoering-van-de-aanbevelingen"><bdi class="secno">2.2.3 </bdi>Fase 3 - Uitvoering van de aanbevelingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#tijdschema"><bdi class="secno">2.3 </bdi>Tijdschema</a></li></ol></li><li class="tocline"><a class="tocxref" href="#wie-en-wat"><bdi class="secno">3. </bdi>Wie en wat?</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#welke-representatieve-keuzen"><bdi class="secno">3.1 </bdi>Welke representatieve keuzen?</a></li><li class="tocline"><a class="tocxref" href="#de-beoordelaars"><bdi class="secno">3.2 </bdi>De Beoordelaars</a></li><li class="tocline"><a class="tocxref" href="#de-gesprekspartners"><bdi class="secno">3.3 </bdi>De Gesprekspartners</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gezamenlijk-beeld"><bdi class="secno">3.3.1 </bdi>Gezamenlijk beeld</a></li><li class="tocline"><a class="tocxref" href="#informatiekundig-perspectief"><bdi class="secno">3.3.2 </bdi>Informatiekundig perspectief</a></li><li class="tocline"><a class="tocxref" href="#juridisch-perspectief"><bdi class="secno">3.3.3 </bdi>Juridisch perspectief</a></li><li class="tocline"><a class="tocxref" href="#audit-perspectief"><bdi class="secno">3.3.4 </bdi>Audit perspectief</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#de-legitimaat-documentenlijst"><bdi class="secno">4. </bdi>De LegitiMaat documentenlijst</a></li><li class="tocline"><a class="tocxref" href="#juridisch-perspectief-vragenlijst"><bdi class="secno">5. </bdi>Juridisch perspectief vragenlijst</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wet-en-regelgeving"><bdi class="secno">5.1 </bdi>Wet- en regelgeving</a></li><li class="tocline"><a class="tocxref" href="#uitvoeringsbeleid"><bdi class="secno">5.2 </bdi>Uitvoeringsbeleid</a></li><li class="tocline"><a class="tocxref" href="#analyse-of-functioneel-ontwerp"><bdi class="secno">5.3 </bdi>Analyse of Functioneel ontwerp</a></li><li class="tocline"><a class="tocxref" href="#beslisregels"><bdi class="secno">5.4 </bdi>Beslisregels</a></li><li class="tocline"><a class="tocxref" href="#code"><bdi class="secno">5.5 </bdi>Code</a></li><li class="tocline"><a class="tocxref" href="#digitale-interactie"><bdi class="secno">5.6 </bdi>Digitale interactie</a></li><li class="tocline"><a class="tocxref" href="#besluit-brief"><bdi class="secno">5.7 </bdi>Besluit (brief)</a></li><li class="tocline"><a class="tocxref" href="#reactie-burger"><bdi class="secno">5.8 </bdi>Reactie burger</a></li><li class="tocline"><a class="tocxref" href="#keteneffecten-0"><bdi class="secno">5.9 </bdi>Keteneffecten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#ontwikkelaarsperspectief-vragenlijst"><bdi class="secno">6. </bdi>Ontwikkelaarsperspectief vragenlijst</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#analyse"><bdi class="secno">6.1 </bdi>Analyse</a></li><li class="tocline"><a class="tocxref" href="#beslisregels-0"><bdi class="secno">6.2 </bdi>Beslisregels</a></li><li class="tocline"><a class="tocxref" href="#functioneel-ontwerp"><bdi class="secno">6.3 </bdi>Functioneel ontwerp</a></li><li class="tocline"><a class="tocxref" href="#code-0"><bdi class="secno">6.4 </bdi>Code</a></li><li class="tocline"><a class="tocxref" href="#digitale-interactie-werkinstructie"><bdi class="secno">6.5 </bdi>Digitale interactie &amp; Werkinstructie</a></li><li class="tocline"><a class="tocxref" href="#brief"><bdi class="secno">6.6 </bdi>Brief</a></li></ol></li><li class="tocline"><a class="tocxref" href="#audit-accountant-perspectief-vragenlijst"><bdi class="secno">7. </bdi>Audit/accountant perspectief Vragenlijst</a></li><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">8. </bdi>Begrippenlijst</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">9. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">10. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
+  <section class="informative" id="de-legitimaat"><div class="header-wrapper"><h2 id="x1-de-legitimaat"><bdi class="secno">1. </bdi>De LegitiMaat</h2><a class="self-link" href="#de-legitimaat" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<section id="introductie"><div class="header-wrapper"><h3 id="x1-1-introductie"><bdi class="secno">1.1 </bdi>Introductie</h3><a class="self-link" href="#introductie" aria-label="Permalink for Section 1.1"></a></div>
+<p>De overheid heeft veel verschillende taken. Deze taken worden bij wet toegekend aan een bestuursorgaan. Een deel van deze wettelijke taken wordt geautomatiseerd uitgevoerd met algoritmen. Denk aan het opleggen van boetes voor te hard rijden, het terugvorderen van toeslagen of het verlenen van AOW of kinderbijslag. Net als bij een meer zichtbare uitvoering van taken zoals het ophogen van dijken, is het belangrijk om te weten hoe deze processen verlopen en welke keuzen daarbij gemaakt zijn. Want ook de geautomatiseerde uitvoering van wetten is publiek handelen en moet legitiem zijn.</p>
+<p>Met de LegitiMaat kan de uitvoerende overheid verantwoording afleggen en kunnen anderen zich er een mening over vormen. De LegitiMaat is bedoeld om te <em>waarderen</em>, zodat de organisatie zich kan ontwikkelen en verbeteren. Het is een <a href="#de-legitimaat-als-visitatie-instrument">visitatie-instrument</a>.</p>
+<section id="voor-wie-is-het-bedoeld"><div class="header-wrapper"><h4 id="x1-1-1-voor-wie-is-het-bedoeld"><bdi class="secno">1.1.1 </bdi>Voor wie is het bedoeld?</h4><a class="self-link" href="#voor-wie-is-het-bedoeld" aria-label="Permalink for Section 1.1.1"></a></div>
+<p>De LegitiMaat is een werkmethode om de geautomatiseerde uitvoering van wetten door de overheid op een gestandaardiseerde manier inzichtelijk te maken en te (laten) beoordelen. De LegitiMaat gaat uit van het vakmanschap van de medewerkers bij de bestuursorganen en van de toenemende vraag in de samenleving dat de overheid rekenschap aflegt over onzichtbare processen.</p>
+<p>Het is bedoeld voor publieke organisaties die wetten geautomatiseerd uitvoeren en besluiten nemen in individuele gevallen. Zij kunnen inzicht te geven over <em>bestaande</em> processen. Ook kunnen zij een visitatie-team met beoordelaars van andere overheidsorganisaties uitnodigen om onderzoek te doen zodat de organisatie weet wat ontwikkeld kan worden of verbeterd.</p>
+<p>Bij <em>nieuw</em> te ontwikkelen van ITsystemen kunnen zij direct zien wat zij moeten vastleggen om inzicht te geven.</p>
+<p>De LegitiMaat is ook bedoeld voor beoordelaars. De juristen, auditors en collega-ontwikkelaars die inzicht nodig hebben en een waardering moeten geven over de manier waarop het bestuursorgaan wetten geautomatiseerd uitvoert.</p>
+</section><section id="hoe-kan-ik-een-bijdrage-leveren"><div class="header-wrapper"><h4 id="x1-1-2-hoe-kan-ik-een-bijdrage-leveren"><bdi class="secno">1.1.2 </bdi>Hoe kan ik een bijdrage leveren?</h4><a class="self-link" href="#hoe-kan-ik-een-bijdrage-leveren" aria-label="Permalink for Section 1.1.2"></a></div>
+<p>Op 1 juli 2022 is het prototype aangeboden aan het ministerie van BZK en gepubliceerd op GitHub. De werkmethode is werkende weg ontwikkeld, getest en aangepast. Meer informatie over het proces en de literatuur die is gebruikt: LINK naar PLEIO. We ontvangen graag verbeteringen! Neem contact op met: <a href="mailto:marlies@hooghiemstra-en-partners.nl">Marlies van Eck</a></p>
+</section></section><section id="een-methode-om-te-evalueren-en-te-leren"><div class="header-wrapper"><h3 id="x1-2-een-methode-om-te-evalueren-en-te-leren"><bdi class="secno">1.2 </bdi>Een methode om te evalueren en te leren</h3><a class="self-link" href="#een-methode-om-te-evalueren-en-te-leren" aria-label="Permalink for Section 1.2"></a></div>
+<p>De LegitiMaat gaat uit van de principes van visitatie-onderzoek. Het is een <a href="#de-legitimaat-als-visitatie-instrument">visitatie-instrument</a>. Dit betekent dat een groot deel van het onderzoek wordt neergelegd bij de expert zelf, het bestuursorgaan.</p>
+<p>In De LegitiMaat wordt aangegeven welke documenten nodig zijn, de LegitiMaat <a href="#de-legitimaat-documentenlijst">documentenlijst</a> en welke vragen vooraf beantwoord moeten worden, de LegitiMaat <a href="#juridisch-perspectief-vragenlijst">vragenlijsten</a>.</p>
+<p>Het visitatie-team dat vervolgens aan de slag gaat, zal interviews houden en steekproeven nemen.</p>
+<p>De LegitiMaat is een belangrijke stap om transparant te zijn en rekenschap en verantwoording af te leggen over het gebruik van algoritmen bij geautomatiseerde uitvoering van wetten.</p>
+<section id="interdisciplinair-en-generiek"><div class="header-wrapper"><h4 id="x1-2-1-interdisciplinair-en-generiek"><bdi class="secno">1.2.1 </bdi>Interdisciplinair en generiek</h4><a class="self-link" href="#interdisciplinair-en-generiek" aria-label="Permalink for Section 1.2.1"></a></div>
+<p>Het is niet zinvol als iedereen vanuit zijn eigen discipline verschillende eisen stelt. Het is ook niet efficiënt als elke overheidsorganisatie zelf moet nadenken over welke vragen iemand zou kunnen hebben. De LegitiMaat is daarom een integrale methode die geschikt is voor drie disciplines voor verschillende overheidsorganisaties. Ook is de werkmethode geschikt voor herhaald gebruik bij verschillende publieke organisaties.</p>
+<p>Met De LegitiMaat kan:</p>
+<ul>
+<li>een jurist een uitspraak doen over de juridische <a data-link-type="dfn" href="#dfn-rechtmatigheid" class="internalDFN" id="ref-for-dfn-rechtmatigheid-1">rechtmatigheid</a> en behoorlijkheid van de geautomatiseerde uitvoering,</li>
+<li>een informatiekundige een uitspraak doen over de kwaliteit van de geautomatiseerde uitvoering,</li>
+<li>een accountant of interne controller een uitspraak doen over de financiële <a data-link-type="dfn" href="#dfn-rechtmatigheid" class="internalDFN" id="ref-for-dfn-rechtmatigheid-2">rechtmatigheid</a> van de geautomatiseerde uitvoering.</li>
+</ul>
+</section><section id="relatie-met-andere-initiatieven"><div class="header-wrapper"><h4 id="x1-2-2-relatie-met-andere-initiatieven"><bdi class="secno">1.2.2 </bdi>Relatie met andere initiatieven</h4><a class="self-link" href="#relatie-met-andere-initiatieven" aria-label="Permalink for Section 1.2.2"></a></div>
+<p>Er gebeurt van alles op het terrein van algoritmen bij de overheid. Zo wordt er gewerkt aan een algoritmeregister en hanteert de overheid een <a data-link-type="dfn" href="#dfn-open-source-beleid" class="internalDFN" id="ref-for-dfn-open-source-beleid-1">open source beleid</a>. Ook wordt steeds vaker over toezicht op algoritmen gesproken. Maar een beoordeling kan pas gegeven worden als de overheidsorganisatie eerst zelf inzicht heeft in het eigen complexe en zeer (wets)technische proces.</p>
+</section></section><section id="hoe-worden-wetten-geautomatiseerd-uitgevoerd"><div class="header-wrapper"><h3 id="x1-3-hoe-worden-wetten-geautomatiseerd-uitgevoerd"><bdi class="secno">1.3 </bdi>Hoe worden wetten geautomatiseerd uitgevoerd?</h3><a class="self-link" href="#hoe-worden-wetten-geautomatiseerd-uitgevoerd" aria-label="Permalink for Section 1.3"></a></div>
+<p>Als de overheid besluiten neemt in individuele gevallen waarbij het gaat om grote aantallen en veel vergelijkbare repeterende taken, gaat dit vaak geautomatiseerd. Hiervoor moet de wet vertaald worden en moet bepaald worden hoe de wet wordt uitgevoerd. Na gesprekken met de professionals hebben we dit proces in de volgende stappen onderscheiden.</p>
+<p><figure id="fig-processen-wetsuitvoering"><img src="media/processen-wetsuitvoering.png" alt="Processen wetsuitvoering" title="Processen wetsuitvoering"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Processen wetsuitvoering</span></figcaption></figure></p>
+<p>Deze procesplaat is een illustratie, geen voorschrift. Elke organisatie zal het proces op een eigen manier hebben ingericht. Dat blijft in stand. De procesplaat en de onderverdeling in De LegitiMaat, is een manier om het gesprek te voeren.</p>
+<section id="geautomatiseerde-besluiten-of-beslissingsondersteuning"><div class="header-wrapper"><h4 id="x1-3-1-geautomatiseerde-besluiten-of-beslissingsondersteuning"><bdi class="secno">1.3.1 </bdi>Geautomatiseerde besluiten of beslissingsondersteuning?</h4><a class="self-link" href="#geautomatiseerde-besluiten-of-beslissingsondersteuning" aria-label="Permalink for Section 1.3.1"></a></div>
+<p>De LegitiMaat gaat over de geautomatiseerde uitvoering van wetten door de overheid. Hierbij maken we een onderscheid tussen besluiten die zonder menselijke tussenkomst worden genomen (gladde gevallen) en besluiten die gedeeltelijk met menselijke tussenkomst worden genomen (niet-gladde gevallen/uitval/uitworp). In het laatste geval fungeren de algoritmen ter ondersteuning van de beslissing. Om te bepalen welke besluiten volledig en welke deels geautomatiseerd worden genomen, wordt gebruik gemaakt van selectie- of prioriteringsmethoden. Door het toepassen van selectieregels (soms in meerdere rondes om aan te sluiten bij beschikbare capaciteit medewerkers) kan de aanvraag ter afhandeling aan een medewerker toebedeeld worden. Deze kan dan extra informatie aanvragen of extra controles verrichten en in samenwerking met de machine een besluit nemen. In het juridisch perspectief noemen we dit de voorbereidende handelingen.</p>
+<p><figure id="fig-voorbereidende-handelingen"><img src="media/voorbereidende-handelingen.png" alt="Voorbereidende handelingen" title="Voorbereidende handelingen"><figcaption>Figuur <bdi class="figno">2</bdi> <span class="fig-title">Voorbereidende handelingen</span></figcaption></figure></p>
+</section><section id="over-wettelijke-regels-regels-en-algoritmen"><div class="header-wrapper"><h4 id="x1-3-2-over-wettelijke-regels-regels-en-algoritmen"><bdi class="secno">1.3.2 </bdi>Over wettelijke regels, regels en algoritmen</h4><a class="self-link" href="#over-wettelijke-regels-regels-en-algoritmen" aria-label="Permalink for Section 1.3.2"></a></div>
+<p>Om de legitimiteit te beoordelen van iets dat door een machine wordt gedaan, is een brug of verbinding (interface) nodig tussen de code die de machine gebruikt en de juridische bronnen die bepalen wat de machine moet doen.</p>
+<p>De code in de machine is voor softwareontwikkelaars een goed begrijpelijke taal, maar voor veel andere mensen niet. Juristen zijn juist goed in het begrijpen van de betekenis van juridische bronnen. Voor niet-juristen is dat vaak moeilijk. In een multidisciplinair gezelschap is een gemeenschappelijke taal nodig om overeenstemming te kunnen krijgen over de betekenis van juridische bronnen en de wijze waarop deze moeten worden verwerkt in code.</p>
+<p>Veel overheidsorganisaties gebruiken hiervoor een regelgebaseerde oplossing; denk hierbij aan verschillende methoden voor het maken van bedrijfsregels en beslismodellen. In feite gaat het hier om een uitdrukking van algoritmen in de vorm van 'regels'; in een taal die zowel voor mens als machine te begrijpen is. We noemen dit beslis-en rekenregels.</p>
+<p>Doel van onze aanpak is om de kwaliteit van het interpreteren van wet- en regelgeving en het coderen van algoritmen op een gestandaardiseerde manier te beschrijven. Dat maakt het mogelijk om de kwaliteit van algoritmen te verbeteren aan de hand van interne discussie en/of externe toetsing.</p>
+</section><section id="over-algoritmen-en-source-code"><div class="header-wrapper"><h4 id="x1-3-3-over-algoritmen-en-source-code"><bdi class="secno">1.3.3 </bdi>Over algoritmen en source code</h4><a class="self-link" href="#over-algoritmen-en-source-code" aria-label="Permalink for Section 1.3.3"></a></div>
+<p>Uiteindelijk worden de algoritmen omgezet in computercode, de <a data-link-type="dfn" href="#dfn-broncode-source-code" class="internalDFN" id="ref-for-dfn-broncode-source-code-1">broncode (source code)</a>.</p>
+</section><section id="het-bereik-van-de-legitimaat"><div class="header-wrapper"><h4 id="x1-3-4-het-bereik-van-de-legitimaat"><bdi class="secno">1.3.4 </bdi>Het bereik van De LegitiMaat</h4><a class="self-link" href="#het-bereik-van-de-legitimaat" aria-label="Permalink for Section 1.3.4"></a></div>
+<p>In de LegitiMaat gaat het om het gehele proces van wet tot aan individueel besluit en daarna, reactie van de ontvangers (telefoontjes, klachten, bezwaren) en de <a data-link-type="dfn" href="#dfn-keteneffecten" class="internalDFN" id="ref-for-dfn-keteneffecten-1">keteneffecten</a>.</p>
+<p>Het is gemaakt voor de geautomatiseerde uitvoering van wet- en regelgeving (inclusief uitwerking of interpretatie in beleidsregels) door de overheid met behulp van kennisgebaseerde algoritmen.</p>
+<p>Kennisgebaseerde algoritmen maken gebruik van regels voor het maken berekeningen, het oplossen van een probleem, het beantwoorden van een vraag of het nemen van een beslissing.</p>
+<p>De regels waar we het over hebben zijn in verschillende typen in te delen: je kunt beslisregels hebben (waarmee je variabelen toetst op waar/niet waar, en dan tot een beslissing komt) en rekenregels (waarmee je met die variabelen een som maakt). Er zijn er nog wel meer te noemen, hoewel die misschien ook wel weer als subcategorieën van deze beide te kwalificeren zijn.</p>
+<p>Als moet worden bepaald of een aanvrager onder een bepaalde categorie valt (bv. partner), dan loop je ook een aantal variabelen in de definitie van partner af, en neem je daar dus eigenlijk een beslissing over. Het resultaat daarvan neem je dan weer mee in een volgende beslissing (bv. over recht op toeslag, studiefinanciering). Je zou dat onder een categorie vallen ook een classificatieregel kunnen noemen.</p>
+<p>Met selectieregels wordt bepaald welke besluiten mede door een ambtenaar moeten worden genomen. Soms zijn dit regels die vooraf geprogrammeerd zijn (zoals 'alle aanvragen waarin mensen een ander adres opgeven dan dat uit de Basisregistratie personen moeten gecontroleerd worden') en soms worden hierbij <a data-link-type="dfn" href="#dfn-statistische-algoritmen" class="internalDFN" id="ref-for-dfn-statistische-algoritmen-1">statistische algoritmen</a> ingezet.</p>
+<p>De LegitiMaat is dus nog niet geschikt voor het afleggen van verantwoording of beoordelen van het gebruik van statistische algoritmen, inclusief <a data-link-type="dfn" href="#dfn-machine-learning" class="internalDFN" id="ref-for-dfn-machine-learning-1">machine learning</a> die uitspraken doen over de waarschijnlijkheid van een uitkomst op basis van statistische analyse van gegevens uit het verleden. Dit kan later wel aan de orde komen.</p>
+</section><section id="keteneffecten"><div class="header-wrapper"><h4 id="x1-3-5-keteneffecten"><bdi class="secno">1.3.5 </bdi>Keteneffecten</h4><a class="self-link" href="#keteneffecten" aria-label="Permalink for Section 1.3.5"></a></div>
+<p>Binnen de overheid worden veel data en systemen aan elkaar verbonden. Dit betekent dat zowel de invoer (data) als het resultaat (een besluit) relaties hebben met andere processen, andere werkvelden, andere wetten en andere instanties. Het inzicht bieden in deze relaties en beoordelen of deze uitvoering volgens de wet, ABBB en het verbod van discriminatie is, hoort ook bij De LegitiMaat.</p>
+</section><section id="wat-te-doen-bij-ingekochte-toepassingen"><div class="header-wrapper"><h4 id="x1-3-6-wat-te-doen-bij-ingekochte-toepassingen"><bdi class="secno">1.3.6 </bdi>Wat te doen bij ingekochte toepassingen?</h4><a class="self-link" href="#wat-te-doen-bij-ingekochte-toepassingen" aria-label="Permalink for Section 1.3.6"></a></div>
+<p>Om een waardering te kunnen geven is veel documentatie nodig. Ook als een overheidsorganisatie een IT-toepassing heeft ingekocht of laten ontwikkelen, blijft de publieke organisatie verantwoordelijk voor een juiste interpretatie van regelgeving en het naleven van algemene beginselen van behoorlijk bestuur. Als de documentatie niet beschikbaar kan worden gemaakt door de leverancier of deze weigert dit vanwege intellectuele eigendomsrechten, dan kan de LegitiMaat niet gebruikt worden.</p>
+</section></section></section>
+  <section id="de-legitimaat-als-visitatie-instrument"><div class="header-wrapper"><h2 id="x2-de-legitimaat-als-visitatie-instrument"><bdi class="secno">2. </bdi>De LegitiMaat als visitatie-instrument</h2><a class="self-link" href="#de-legitimaat-als-visitatie-instrument" aria-label="Permalink for Section 2."></a></div>
+<section id="visitatie"><div class="header-wrapper"><h3 id="x2-1-visitatie"><bdi class="secno">2.1 </bdi>Visitatie</h3><a class="self-link" href="#visitatie" aria-label="Permalink for Section 2.1"></a></div>
+<p>Bij visitatie staat niet de controle centraal, maar het leren en ontwikkelen op grond van een zelfevaluatie en een collegiale waardering daarvan.</p>
+<p>Visitaties worden in allerlei sectoren toegepast, bijvoorbeeld de medische wereld en het onderwijs. Eind jaren '90 is bij de Rijksoverheid een visitatiestelsel ingevoerd voor de wetgevingsfunctie; dit visitatiestelsel heeft gefunctioneerd tot ca. 2008. Het Integraal afwegingskader beleid en regelgeving noemt visitatie als beleidsinstrument. Bij de uitwerking van het visitatie-aspect van de LegitiMaat hebben we inspiratie geput uit verschillende van deze visitatiestelsels.</p>
+</section><section id="hoe-verloopt-een-visitatie"><div class="header-wrapper"><h3 id="x2-2-hoe-verloopt-een-visitatie"><bdi class="secno">2.2 </bdi>Hoe verloopt een visitatie?</h3><a class="self-link" href="#hoe-verloopt-een-visitatie" aria-label="Permalink for Section 2.2"></a></div>
+<p>Op het web zijn verschillende draaiboeken te vinden voor collegiale visitaties; uit een aantal daarvan hebben we geput voor de LegitiMaat.</p>
+<p>Een visitatie bestaat in principe uit drie fasen. De eerste fase is een zelfevaluatie door de organisatie, de tweede fase is een bezoek van een onafhankelijk visitatieteam dat met alle betrokkenen spreekt aan de hand van de resultaten van de zelfevaluatie. Op basis daarvan <em>waardeert</em> het team de organisatie en doet het aanbevelingen voor verdere verbetering. In de derde fase geeft de organisatie uitvoering aan de aanbevelingen.</p>
+<p>Een visitatie wordt periodiek herhaald. Een driejaarlijkse cyclus lijkt het meest effectief en efficiënt. Er is dan voldoende tijd voor een goede voorbereiding en voor implementatie van de aanbevelingen. De frequentie kan op basis van ervaringen worden bijgesteld.</p>
+<p>De <a href="#wie-en-wat">beoordelaars</a> in het onafhankelijk visitatieteam zijn medewerkers van een andere overheidsorganisatie, die in hun organisatie direct betrokken zijn bij de ontwikkeling en toepassing van algoritmen. Zij kunnen op grond van hun kennis en ervaring kritische vragen stellen. Bovendien kunnen ze ook weer leren van de werkwijzen en ervaringen van de organisatie die zij visiteren. Zo snijdt het mes aan twee kanten. Met het oog op objectiviteit van het visitatieteam wordt voorzien in een onafhankelijke voorzitter en secretaris (dwz. niet afkomstig uit de visiterende of te visiteren organisatie).</p>
+<p>Hierna worden de drie fasen beschreven.</p>
+<section id="fase-1-zelfevaluatie"><div class="header-wrapper"><h4 id="x2-2-1-fase-1-zelfevaluatie"><bdi class="secno">2.2.1 </bdi>Fase 1 - Zelfevaluatie</h4><a class="self-link" href="#fase-1-zelfevaluatie" aria-label="Permalink for Section 2.2.1"></a></div>
+<p>De organisatie voert de zelfevaluatie uit aan de hand van de lijst met <a href="#de-legitimaat-documentenlijst">documenten</a> die nodig zijn voor het onderzoek en de LegitiMaat <a href="#juridisch-perspectief-vragenlijst">vragenlijsten</a>. Een coördinator zet de lijsten uit bij de betrokken onderdelen, bewaakt de voorgang en checkt de aangeleverde input op duidelijkheid e.d.</p>
+<p>De start van de zelfevaluatie is afhankelijk van de vraag wanneer het visitatieteam het visitatiebezoek kan afleggen. Als richtlijn kan worden aangehouden dat de zelfevaluatie ca. vier weken voor het bezoek van het visitatieteam moet zijn afgerond (zie tijdschema in paragraaf 4). Dit geeft het team de tijd om het bezoek voor te bereiden. Het is van belang dat in elk geval de voorzitter en secretaris van het visitatieteam bekend zijn bij de start van de zelfevaluatie, zodat (in een kennismakingsgesprek) de termijnen met hen kunnen worden afgestemd.</p>
+</section><section id="fase-2-bezoek-visitatieteam-proof-of-the-pudding"><div class="header-wrapper"><h4 id="x2-2-2-fase-2-bezoek-visitatieteam-proof-of-the-pudding"><bdi class="secno">2.2.2 </bdi>Fase 2 - Bezoek visitatieteam: proof of the pudding</h4><a class="self-link" href="#fase-2-bezoek-visitatieteam-proof-of-the-pudding" aria-label="Permalink for Section 2.2.2"></a></div>
+<p>De visitatie zelf wordt uitgevoerd door het visitatieteam. Het visitatieteam bestaat uit de beoordelaars met de drie perspectieven: juridisch, audit perspectief en IT-ontwikkel perspectief. Denk aan 4 tot 5 beoordelaars en een onafhankelijk voorzitter en secretaris. Het visitatieteam kijkt in hoeverre het beeld dat de organisatie van zichzelf heeft waar het gaat over kwaliteit van ontwikkeling en toepassing van algoritmen, overeenkomt met het beeld dat het visitatieteam krijgt op basis van de eigen voorbereiding (doornemen van de zelfevaluatie, en aanvullend onderzoek.</p>
+<p>Daar waar fase 1 is gericht op het verkrijgen van documenten en informatie over de processen, is dit deel van het onderzoek gericht op de inhoudelijke / materiele uitkomst. Ook als processen goed zijn ingericht, zegt dit nog niet dat het resultaat: de besluiten en de rechtsbescherming of keteneffecten inhoudelijk conform de wet, de ABBB en verbod van discriminatie zijn.</p>
+<p>Vergelijk dit met een rijexamen; er kan worden getoetst of de aspirant bestuurder in de spiegels kijkt en de bewegingen maakt zoals over de schouder kijken. De procedure kan dan met een goed beoordeeld worden. Maar dit betekent nog niet dat de persoon ook echt ziet wat er gebeurt, de mogelijke gevaren tijdig onderkent en daarnaar handelt. Dit zie je pas door in de praktijk mee te kijken en waar te nemen wat er goed gaat en wat (bijna) fout.</p>
+<p>Hoe dit onderzoek het beste kan worden vormgegeven is afhankelijk van de situatie en beschikbare tijd. Wij raden aan om in ieder geval dit te onderzoeken:</p>
+<ol>
+<li>Jurisprudentie: wat zijn de meest voorkomende geschillen op het terrein van de gekozen wet en processen en komt het beeld dat daaruit ontstaat, overeen met de zelfevaluatie.</li>
+<li>Beslisregels: als beslisregels gegarandeerd ten grondslag liggen aan code, is het aan te raden de beslisregels inhoudelijk te onderzoeken. Als het aantal te groot is, kan gekeken worden naar hulpmiddelen om analyses te verrichten (zoals met e-discovery tooling).</li>
+<li>Een steekproefsgewijze inhoudelijke beoordeling van de besluiten (zonder en in combinatie met bezwaar/klachtprocedures).</li>
+</ol>
+<p>Het is ook denkbaar dat andere methoden hiervoor gebruikt kunnen worden om een beeld te krijgen, met behulp van data-analyse en/of proces mining of decision-ming [link naar begrippenlijst]. Dit kan in een volgende versie uitgeprobeerd worden.</p>
+<p>Daarnaast is het houden van interviews met medewerkers essentieel. Het gaat dan om medewerkers in functies die worden uitgekozen door de leden van het team.</p>
+<p>Er wordt geen vaste norm gegeven voor het tijdsbeslag; afhankelijk van de omvang en inrichting van de organisatie kunnen één of meer dagen worden ingepland voor de visitatie.</p>
+<p>Na het bezoek (of de bezoeken) stelt het visitatieteam een voorlopige rapportage op met bevindingen en aanbevelingen op alle onderdelen van de LegitiMaat. Aanbevelingen op basis van de bevindingen worden uitdrukkelijk gericht op de positieve punten (waarderen) als op de verbeterpunten (leren).</p>
+<p>Het visitatieteam bespreekt het rapport met het MT van de organisatie. Zo kan er een mondelinge toelichting gegeven worden en kan de organisatie reageren (hoor en wederhoor). De rapportage wordt definitief gemaakt.</p>
+</section><section id="fase-3-uitvoering-van-de-aanbevelingen"><div class="header-wrapper"><h4 id="x2-2-3-fase-3-uitvoering-van-de-aanbevelingen"><bdi class="secno">2.2.3 </bdi>Fase 3 - Uitvoering van de aanbevelingen</h4><a class="self-link" href="#fase-3-uitvoering-van-de-aanbevelingen" aria-label="Permalink for Section 2.2.3"></a></div>
+<p>De organisatie maakt een implementatieplan voor de gedane aanbevelingen. Hierin worden acties voor uitbouw of bestendiging van positieve punten opgenomen en acties ter opvolging van verbeterpunten. De acties worden van een concrete realisatietermijn voorzien, zodat zij in een volgende visitatie kunnen worden meegenomen.</p>
+</section></section><section id="tijdschema"><div class="header-wrapper"><h3 id="x2-3-tijdschema"><bdi class="secno">2.3 </bdi>Tijdschema</h3><a class="self-link" href="#tijdschema" aria-label="Permalink for Section 2.3"></a></div>
+<p>In de onderstaande tabel is een (indicatief) tijdschema opgenomen voor het visitatietraject. De tijdsmarges zijn gerekend vanaf het moment van het (eerste) bezoek van het visitatieteam.</p>
+<table class="simple">
+<thead>
+<tr>
+<th><strong>Activiteit</strong></th>
+<th><strong>Indicatie tijdsmarge</strong></th>
+<th><strong>Initiatiefnemer</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kennismakingsgesprek met organisatie</td>
+<td>6 weken vooraf</td>
+<td>Voorzitter/secretaris</td>
+</tr>
+<tr>
+<td>Uitzetten LegitiMaat vragenlijsten en documentatielijst</td>
+<td>6 weken vooraf</td>
+<td>Coördinator visitatie in de organisatie</td>
+</tr>
+<tr>
+<td>Completeren visitatieteam en doorgeven namen aan organisatie</td>
+<td>5 weken vooraf</td>
+<td>Voorzitter/secretaris</td>
+</tr>
+<tr>
+<td>Verzamelen en checken input op LegitiMaat</td>
+<td>4 weken vooraf</td>
+<td>Coördinator</td>
+</tr>
+<tr>
+<td>Toesturen input LegitiMaat aan secretaris visitatieteam</td>
+<td>4 weken vooraf</td>
+<td>Coördinator</td>
+</tr>
+<tr>
+<td>Opstellen dagprogramma bezoek visitatieteam + aangeven steekproeven</td>
+<td>2 weken vooraf</td>
+<td>Secretaris en coördinator</td>
+</tr>
+<tr>
+<td>Check op dagprogramma</td>
+<td>2 weken vooraf</td>
+<td>Hele visitatieteam</td>
+</tr>
+<tr>
+<td>Plannen gesprekken</td>
+<td>1 week vooraf</td>
+<td>Coördinator</td>
+</tr>
+<tr>
+<td>Visitatiedag(en): voorbespreking, gesprekken, presentaties, nabespreking</td>
+<td>Visitatiedag</td>
+<td>Visitatieteam</td>
+</tr>
+<tr>
+<td>Schriftelijke input voor concept-visitatierapport (via mail)</td>
+<td>Dag na visitatie</td>
+<td>Visitatieteam</td>
+</tr>
+<tr>
+<td>Opstellen concept-visitatierapport en voorleggen aan visitatieteam</td>
+<td>1 week na visitatie</td>
+<td>Secretaris</td>
+</tr>
+<tr>
+<td>Verwerken input</td>
+<td>2 weken na visitatie</td>
+<td>Secretaris</td>
+</tr>
+<tr>
+<td>Accorderen visitatierapport door het visitatieteam</td>
+<td>2 weken na visitatie</td>
+<td>Visitatieteam</td>
+</tr>
+<tr>
+<td>Toesturen visitatierapport aan organisatie</td>
+<td>3 weken na visitatie</td>
+<td>Voorzitter</td>
+</tr>
+<tr>
+<td>Plannen gesprek met organisatie</td>
+<td>3 weken na visitatie</td>
+<td>Secretaris/Coördinator</td>
+</tr>
+<tr>
+<td>Gesprek met organisatie over het rapport</td>
+<td>3 weken na visitatie</td>
+<td>Visitatieteam</td>
+</tr>
+<tr>
+<td>Opstellen implementatieplan</td>
+<td>4 weken na visitatie</td>
+<td>Coördinator</td>
+</tr>
+</tbody></table>
+</section></section>
+  <section id="wie-en-wat"><div class="header-wrapper"><h2 id="x3-wie-en-wat"><bdi class="secno">3. </bdi>Wie en wat?</h2><a class="self-link" href="#wie-en-wat" aria-label="Permalink for Section 3."></a></div>
+<p>Als je aan de slag wil gaan met De LegitiMaat heb je nodig:</p>
+<ul>
+<li>een beslissing over het proces dat wordt onderzocht; dus welke wet wordt uitgevoerd,</li>
+<li>zekerheid dat dit proces leidt tot besluiten die individuele burgers raken (besluiten zijn volgens artikel 1:3 van de Algemene wet bestuursrecht),</li>
+<li>beoordelaars,</li>
+<li>documenten van de overheidsorganisatie die wordt onderzocht,</li>
+<li>gesprekspartners/experts aan wie de beoordelaars vragen kunnen stellen</li>
+<li>methode om de antwoorden te verifiëren</li>
+</ul>
+<section id="welke-representatieve-keuzen"><div class="header-wrapper"><h3 id="x3-1-welke-representatieve-keuzen"><bdi class="secno">3.1 </bdi>Welke representatieve keuzen?</h3><a class="self-link" href="#welke-representatieve-keuzen" aria-label="Permalink for Section 3.1"></a></div>
+<p>Ook na de keuze voor een proces (welke wet wordt geautomatiseerd uitgevoerd) is het nodig om af te bakenen. Omdat een onderzoek naar de gehele uitvoering meestal niet realistisch is, is het aan te raden te kiezen voor een onderzoek dat voldoende representatief is.</p>
+<p>Je krijgt een representatief beeld door het onderzoek binnen het <a data-link-type="dfn" href="#dfn-bereik-van-de-legitimaat" class="internalDFN" id="ref-for-dfn-bereik-van-de-legitimaat-1">bereik van De LegitiMaat</a> toe te spitsen op twee extremen:</p>
+<ol>
+<li>een relatief eenvoudig uit te voeren beslissingen (vaststellen van een leeftijd bijvoorbeeld)</li>
+<li>een relatief lastig uit te voeren beslissingen (met veel beoordelingsruimte zoals een recht of uitzondering dat bepaald moet worden aan de hand van feiten en omstandigheden).</li>
+</ol>
+</section><section id="de-beoordelaars"><div class="header-wrapper"><h3 id="x3-2-de-beoordelaars"><bdi class="secno">3.2 </bdi>De Beoordelaars</h3><a class="self-link" href="#de-beoordelaars" aria-label="Permalink for Section 3.2"></a></div>
+<p>De beoordelaars zijn mensen die vanuit hun deskundigheid het onderzoek uitvoeren. De LegitiMaat is gemaakt voor drie perspectieven. Daarom wordt aangeraden wordt om het team te vormen door minstens een auditor, jurist en een collega <a data-link-type="dfn" href="#dfn-softwareontwikkelaar" class="internalDFN" id="ref-for-dfn-softwareontwikkelaar-1">softwareontwikkelaar</a>. Per deskundigheid is een specifieke vragenlijst ontwikkeld. Bij de methode hoort dat eerst een gezamenlijk beeld wordt verkregen, dan drie verschillende verdiepende onderzoeken worden verricht en tenslotte een gezamenlijk eindoordeel.</p>
+<p>De LegitiMaat is ontwikkeld als <a href="#de-legitimaat-als-visitatie-instrument">visitatie-instrument</a>. Dit houdt in dat de beoordelaars zowel medewerkers van de organisatie zelf kunnen zijn als externe deskundigen die lid zijn van een visitatieteam.</p>
+</section><section id="de-gesprekspartners"><div class="header-wrapper"><h3 id="x3-3-de-gesprekspartners"><bdi class="secno">3.3 </bdi>De Gesprekspartners</h3><a class="self-link" href="#de-gesprekspartners" aria-label="Permalink for Section 3.3"></a></div>
+<p>Om het goede gesprek te voeren is het nodig dat je spreekt met personen die een bepaalde rol vervullen. We spreken over rollen en niet over functies omdat deze niet standaard hetzelfde worden genoemd of worden ingevuld bij de overheidsorganisaties. Er zijn mensen nodig die uitleg kunnen geven over het totale en gezamenlijke beeld, en specialisten die afzonderlijk het gesprek kunnen voeren met een van de drie typen beoordelaars.</p>
+<section id="gezamenlijk-beeld"><div class="header-wrapper"><h4 id="x3-3-1-gezamenlijk-beeld"><bdi class="secno">3.3.1 </bdi>Gezamenlijk beeld</h4><a class="self-link" href="#gezamenlijk-beeld" aria-label="Permalink for Section 3.3.1"></a></div>
+<p>De persoon die verantwoordelijkheid draagt voor het ontwikkelen en beheer van de systemen waarmee de wet geautomatiseerd wordt uitgevoerd.</p>
+<p>De medewerker die weet hoe de uitvoering van de wet in technologisch en / of juridisch opzicht samenhangt met geautomatiseerde uitvoering van wetten bij andere overheidsorganisaties.</p>
+<p>De medewerker die weet hoe signalen van burgers die besluiten krijgen, worden gebruikt voor het verbeteren van de geautomatiseerde uitvoering.</p>
+</section><section id="informatiekundig-perspectief"><div class="header-wrapper"><h4 id="x3-3-2-informatiekundig-perspectief"><bdi class="secno">3.3.2 </bdi>Informatiekundig perspectief</h4><a class="self-link" href="#informatiekundig-perspectief" aria-label="Permalink for Section 3.3.2"></a></div>
+<p>De auteur van het pakket van eisen en/of <a data-link-type="dfn" href="#dfn-functioneel-ontwerp" class="internalDFN" id="ref-for-dfn-functioneel-ontwerp-1">functioneel ontwerp</a>.</p>
+<p>De software ontwikkelaar die op basis van een pakket van eisen en/of functioneel ontwerp code schrijft.</p>
+<p>Beheerder die de machine en applicatie(s) beheert waarop/mee de regelservice(s) draaien</p>
+<p>Manager die over de <a data-link-type="dfn" href="#dfn-information-technology-infrastructure-library-itil" class="internalDFN" id="ref-for-dfn-information-technology-infrastructure-library-itil-1">Information Technology Infrastructure Library (ITIL)</a> gerelateerde zaken gaat.</p>
+</section><section id="juridisch-perspectief"><div class="header-wrapper"><h4 id="x3-3-3-juridisch-perspectief"><bdi class="secno">3.3.3 </bdi>Juridisch perspectief</h4><a class="self-link" href="#juridisch-perspectief" aria-label="Permalink for Section 3.3.3"></a></div>
+<p>De medewerker die kan vertellen welke uitgangspunten door het bestuur richtinggevend zijn gemaakt (denk aan: burger centraal / verantwoord vertrouwen / excellente dienstverlening / meer doen met minder mensen).</p>
+<p>De <a data-link-type="dfn" href="#dfn-regelexpert" class="internalDFN" id="ref-for-dfn-regelexpert-1">regelexpert</a>.</p>
+<p>De functionaris die beslist welke soort besluiten worden gecategoriseerd als <a data-link-type="dfn" href="#dfn-uitworp" class="internalDFN" id="ref-for-dfn-uitworp-1">niet glad geval</a>.</p>
+<p>De medewerker die kan vertellen bij welke kwesties de <a data-link-type="dfn" href="#dfn-beslisambtenaar" class="internalDFN" id="ref-for-dfn-beslisambtenaar-1">beslisambtenaar</a> het systeem mag overrulen.</p>
+<p>De juridisch medewerker die weet hoe externe signalen (vanuit de samenleving/politiek, zoals maatwerk of werken vanuit de bedoeling, of bestuursrechtelijk, zoals uitspraak RvS over evenredigheid of maatwerk, en / of interne signalen (zoals klachten/telefoontjes) leiden tot aanpassingen in het ontwikkelproces.</p>
+<p>De medewerker die weet hoe IT-aanpassingen worden geprioriteerd en weet onder welke omstandigheden de wens tot een wijziging in een bestaand systeem wordt gehonoreerd.</p>
+<p>De juridisch medewerker die <a data-link-type="dfn" href="#dfn-procesvertegenwoordigers" class="internalDFN" id="ref-for-dfn-procesvertegenwoordigers-1">procesvertegenwoordiger</a> is namens het bestuursorgaan.</p>
+</section><section id="audit-perspectief"><div class="header-wrapper"><h4 id="x3-3-4-audit-perspectief"><bdi class="secno">3.3.4 </bdi>Audit perspectief</h4><a class="self-link" href="#audit-perspectief" aria-label="Permalink for Section 3.3.4"></a></div>
+<p>De <a data-link-type="dfn" href="#dfn-interne-controller" class="internalDFN" id="ref-for-dfn-interne-controller-1">interne controller</a> die controleert of de uitvoering financieel <a data-link-type="dfn" href="#dfn-rechtmatigheid" class="internalDFN" id="ref-for-dfn-rechtmatigheid-3">rechtmatig</a> is.</p>
+</section></section></section>
+  <section id="de-legitimaat-documentenlijst"><div class="header-wrapper"><h2 id="x4-de-legitimaat-documentenlijst"><bdi class="secno">4. </bdi>De LegitiMaat documentenlijst</h2><a class="self-link" href="#de-legitimaat-documentenlijst" aria-label="Permalink for Section 4."></a></div>
+<p>Bij de start van het onderzoek is het nodig dat een reeks documenten wordt aangeleverd aan de onderzoekers. We hebben dit De LegitiMaat documentenlijst genoemd. Dit kan al een lastige opgave zijn dus begin op tijd. Om het onderzoek te doen zijn in ieder geval deze documenten noodzakelijk :</p>
+<ol>
+<li>De wettekst</li>
+<li>De beslisregels die zien op de twee extremen zoals hierboven is aangegeven</li>
+<li>De analyse (indien van toepassing)</li>
+<li>Het <a data-link-type="dfn" href="#dfn-functioneel-ontwerp" class="internalDFN" id="ref-for-dfn-functioneel-ontwerp-2">functioneel ontwerp</a> dat ziet op in ieder geval de twee extremen</li>
+<li>De interactie schermen (screenprints) van de website waar de informatie gegeven wordt aan de aanvrager en de interactie plaats vindt</li>
+<li>De brieven die de individuele persoon kan krijgen hierover (besluiten in de zin van artikel 1:3 Awb)</li>
+<li>De werkinstructie waar het proces wordt beschreven.</li>
+<li>Interne kwaliteitseisen</li>
+<li>Overzicht van onderwerpen waarover burgers bellen, klagen of bezwaar maken en de aantallen(liefst over meerdere jaren)</li>
+</ol>
+</section>
+  <section id="juridisch-perspectief-vragenlijst"><div class="header-wrapper"><h2 id="x5-juridisch-perspectief-vragenlijst"><bdi class="secno">5. </bdi>Juridisch perspectief vragenlijst</h2><a class="self-link" href="#juridisch-perspectief-vragenlijst" aria-label="Permalink for Section 5."></a></div>
+<p>Centrale vraag in het juridisch perspectief is deze:</p>
+<p>Is de uitvoering conform wet- en regelgeving, de Algemene Beginselen van Behoorlijk Bestuur (ABBB) (LINK naar begrippenlijst) en het verbod van discriminatie?</p>
+<section id="wet-en-regelgeving"><div class="header-wrapper"><h3 id="x5-1-wet-en-regelgeving"><bdi class="secno">5.1 </bdi>Wet- en regelgeving</h3><a class="self-link" href="#wet-en-regelgeving" aria-label="Permalink for Section 5.1"></a></div>
+<ol>
+<li>Bevat de voor de uit te voeren taak toepasselijke wet- en regelgeving een discretionaire bevoegdheid?</li>
+<li>Bevat deze wet een hardheidsclausule?</li>
+<li>Is het uitvoeringsbeleid neergelegd in beleidsregels?</li>
+<li>Is wettelijk bepaald welke gegevens van andere bestuursorganen gebruikt moeten worden?</li>
+</ol>
+</section><section id="uitvoeringsbeleid"><div class="header-wrapper"><h3 id="x5-2-uitvoeringsbeleid"><bdi class="secno">5.2 </bdi>Uitvoeringsbeleid</h3><a class="self-link" href="#uitvoeringsbeleid" aria-label="Permalink for Section 5.2"></a></div>
+<ol>
+<li>Is vastgelegd hoe de beoordelingsruimte [LINK naar begrippenlijst] wordt ingevuld en welke belangen hierbij een rol spelen (efficiency / handhaving / dienstverlening/ vertrouwen in de burger)?</li>
+<li>Als uitvoeringsbeleid wordt vastgelegd in bronnen die voor intern gebruik zijn bedoeld; wat is de rechtvaardiging om dit niet vast te leggen in gepubliceerde beleidsregels?</li>
+<li>Leercirkel: leiden ervaringen uit de uitvoering, telefoontjes, geconstateerde fouten, interne signalen, aanbevelingen van de ombudsman, bezwaren en klachten, jurisprudentie e.d. tot veranderingen in uitvoeringsbeleid of in wet- en regelgeving?</li>
+</ol>
+</section><section id="analyse-of-functioneel-ontwerp"><div class="header-wrapper"><h3 id="x5-3-analyse-of-functioneel-ontwerp"><bdi class="secno">5.3 </bdi>Analyse of Functioneel ontwerp</h3><a class="self-link" href="#analyse-of-functioneel-ontwerp" aria-label="Permalink for Section 5.3"></a></div>
+<ol>
+<li>Hoe worden de voor de uit te voeren taak relevante bronnen (de toepasselijke wet- en regelgeving en het uitvoeringsbeleid) verzameld?</li>
+<li>Hoe wordt de compleetheid van de verzamelde bronnen verzekerd, in het licht van de uit te voeren taak?</li>
+<li>Welke disciplines zijn betrokken bij de analyse? In hoeverre is de analyse of interpretatie afhankelijk van de persoon van de analist, komen verschillende analisten tot eenzelfde interpretatie (inter-coder reliability)[LINK naar begrippenlijst]?</li>
+<li>Welke ondersteunende applicaties zijn beschikbaar voor analyse en interpretatie van de bronnen en vastlegging van de resultaten daarvan?</li>
+<li>Worden bij de analyse of de interpretatie van de bronnen gemaakte keuzes expliciet vastgelegd?</li>
+<li>Worden er begrippen geïnterpreteerd uit wetten die andere overheden uitvoeren en wordt de interpretatie getoetst bij deze instanties? (Stel dat DUO een begrip uit de Rijkswet op het Nederlanderschap invult, wordt dit getoetst bij de IND?)</li>
+<li>Worden concrete voorbeelden of scenario's gemaakt voor het valideren van de analyse?</li>
+<li>Is in deze fase gezorgd voor een routine voor onvoorziene zaken/onbedoelde uitkomsten? (bijvoorbeeld dat bepaalde gevallen niet geautomatiseerd worden afgedaan maar via een handmatig proces, dat een medewerker mag/moet overrulen)</li>
+<li>Is in deze fase gezorgd voor mogelijkheid dat voorafgaand aan het besluit contact wordt opgenomen met de ontvanger van het besluit?</li>
+<li>Is het mogelijk gemaakt dat er gegevens gebruikt worden die de burger verstrekt (een soort 'beweringenregister')?</li>
+<li>Wordt expliciet vastgelegd in welke gevallen een medewerker zelf een afweging mag maken, andere gegevens mag invullen of het systeem mag overrulen?</li>
+<li>Leercirkel: leiden ervaringen uit de uitvoering, telefoontjes, geconstateerde fouten, interne signalen, aanbevelingen van de ombudsman, bezwaren en klachten, jurisprudentie e.d. tot veranderingen van de analyse?</li>
+</ol>
+</section><section id="beslisregels"><div class="header-wrapper"><h3 id="x5-4-beslisregels"><bdi class="secno">5.4 </bdi>Beslisregels</h3><a class="self-link" href="#beslisregels" aria-label="Permalink for Section 5.4"></a></div>
+<ol>
+<li>Is de vertaling van wet- en regelgeving en uitvoeringsbeleid naar beslisregels voor mensen leesbaar en begrijpelijk?</li>
+<li>Hoe wordt de herleidbaarheid van beslisregels naar hun (juridische) bronnen gerealiseerd?</li>
+<li>Worden de ABBB en het verbod van discriminatie meegenomen in de beslisregels?</li>
+<li>Worden de beslisregels getest op het nemen van besluiten die in overeenstemming zijn met de wet, ABBB en verbod van discriminatie?</li>
+<li>Worden de concrete voorbeelden en scenario's uit de analysefase gebruikt voor validatie van de beslisregels?</li>
+<li>Is de uitvoering in de ICT-systemen gebaseerd op de beslisregels die op grond van de analyse van juridische bronnen zijn gemaakt?</li>
+<li>Hoe wordt bepaald welke besluiten (mede)handmatig worden genomen?</li>
+<li>Door welke motieven wordt bepaald of een besluit wordt uitgeworpen en hoe worden de ABBB en het verbod van discriminatie hierin verwerkt?</li>
+<li>Worden dezelfde regels gebruikt voor automatische (regels/algoritmen) en handmatige besluiten (werkinstructies)?</li>
+<li>Worden dezelfde regels gebruikt voor primaire besluiten als voor beslissingen op bezwaar?</li>
+<li>Worden de beslisregels intern en extern gepubliceerd? Als ze alleen intern worden gepubliceerd, wat is dan de rechtvaardiging om ze intern te houden? Waar vindt externe publicatie van beslisregels plaats?</li>
+</ol>
+</section><section id="code"><div class="header-wrapper"><h3 id="x5-5-code"><bdi class="secno">5.5 </bdi>Code</h3><a class="self-link" href="#code" aria-label="Permalink for Section 5.5"></a></div>
+<ol>
+<li>Wordt de code automatisch gegenereerd uit de beslisregels of worden mensen ingezet om van beslisregels naar code te komen?</li>
+<li>Hoe wordt indirect of verborgen uitvoeringsbeleid in de code voorkomen? Is er een routine om terug te gaan naar beleid/wetgever indien bij het coderen blijkt dat nadere interpretatie of invulling nodig is?</li>
+<li>Hoe wordt de code getest/gevalideerd op conformiteit met de beslisregels? Welke deskundigen en disciplines zijn hierbij betrokken?</li>
+<li>Is de code herleidbaar naar de juridische bron?</li>
+</ol>
+</section><section id="digitale-interactie"><div class="header-wrapper"><h3 id="x5-6-digitale-interactie"><bdi class="secno">5.6 </bdi>Digitale interactie</h3><a class="self-link" href="#digitale-interactie" aria-label="Permalink for Section 5.6"></a></div>
+<ol>
+<li>Kan de burger zelf gegevens wijzigen?</li>
+<li>Is de interactie gebaseerd op de beslisregels?</li>
+<li>Wat is het resultaat van de digitale interactie?</li>
+</ol>
+</section><section id="besluit-brief"><div class="header-wrapper"><h3 id="x5-7-besluit-brief"><bdi class="secno">5.7 </bdi>Besluit (brief)</h3><a class="self-link" href="#besluit-brief" aria-label="Permalink for Section 5.7"></a></div>
+<ol>
+<li>Is het besluit direct en uitsluitend gebaseerd op de code, die op zijn beurt gebaseerd is op de beslisregels?</li>
+<li>Hoe wordt de burger geïnformeerd die de beslis- en rekenregels wil weten om die eventueel te betwisten?</li>
+<li>Bevat het besluit een verwijzing naar de geautomatiseerde totstandkoming en recht op de logica?</li>
+<li>Klopt de motivering?</li>
+<li>Is duidelijk hoe de burger contact op kan nemen?</li>
+</ol>
+</section><section id="reactie-burger"><div class="header-wrapper"><h3 id="x5-8-reactie-burger"><bdi class="secno">5.8 </bdi>Reactie burger</h3><a class="self-link" href="#reactie-burger" aria-label="Permalink for Section 5.8"></a></div>
+<ol>
+<li>Kan de burger informeel, dus zonder bezwaar te maken, in contact komen met een medewerker over het besluit?</li>
+<li>Is er inzicht en overzicht in het geheel aan reacties van burgers?</li>
+</ol>
+</section><section id="keteneffecten-0"><div class="header-wrapper"><h3 id="x5-9-keteneffecten"><bdi class="secno">5.9 </bdi>Keteneffecten</h3><a class="self-link" href="#keteneffecten-0" aria-label="Permalink for Section 5.9"></a></div>
+<ol>
+<li>Is in kaart gebracht welke instanties ('third-party decision recipient') geïnformeerd worden over het besluit en hoe dit plaats vindt (door uitwisseling van gegevens/verwijsindex/toegang verlenen tot databases)?</li>
+<li>Wordt het besluit al doorgegeven terwijl deze nog niet in rechte vast staat en dus vernietigd kan worden? [LINK begrippenlijst]</li>
+<li>Worden wijzigingen met terugwerkende kracht (vanwege de vernietiging van een besluit) doorgegeven?</li>
+</ol>
+</section></section>
+  <section id="ontwikkelaarsperspectief-vragenlijst"><div class="header-wrapper"><h2 id="x6-ontwikkelaarsperspectief-vragenlijst"><bdi class="secno">6. </bdi>Ontwikkelaarsperspectief vragenlijst</h2><a class="self-link" href="#ontwikkelaarsperspectief-vragenlijst" aria-label="Permalink for Section 6."></a></div>
+<section id="analyse"><div class="header-wrapper"><h3 id="x6-1-analyse"><bdi class="secno">6.1 </bdi>Analyse</h3><a class="self-link" href="#analyse" aria-label="Permalink for Section 6.1"></a></div>
+<ol>
+<li>Is er een gedetailleerde beschrijving van de huidige werking van het (primaire) proces, voor zover relevant, een omschrijving van het op te lossen probleem en de omvang daarvan? Is de probleemeigenaar (de verantwoordelijke voor het probleemgebied) bekend?</li>
+<li>Wat moet met de voorgestelde verandering worden gerealiseerd, zo mogelijk uitgedrukt in verbetering van rechtmatigheid, doelmatigheid, klanttevredenheid en medewerkertevredenheid?</li>
+<li>Welke gebruikers- en/of beleidsscenario's zijn voor opdrachtgever voldoende representatief om voor het gehele spectrum van toepassing de gewenste oplossing(en) te kunnen toetsen of aan alle uitgangspunten / randvoorwaarden / principes / etc. wordt voldaan? Neem hierbij in acht op welke wijze de opdrachtgever daarover wenst te communiceren: zowel in de oplossing(en) zelf (ie bedrijfsvoering) alsook óver de oplossing(en).</li>
+</ol>
+<table class="simple">
+<thead>
+<tr>
+<th>Willen weten</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Toetsscenario’s formuleren i.c.m. communicatie beleid.</td>
+<td>Dit is een voorbeeld ter illustratie<br>A.<br>B.<br>C.<br>D.<br>E.</td>
+</tr>
+</tbody></table>
+</section><section id="beslisregels-0"><div class="header-wrapper"><h3 id="x6-2-beslisregels"><bdi class="secno">6.2 </bdi>Beslisregels</h3><a class="self-link" href="#beslisregels-0" aria-label="Permalink for Section 6.2"></a></div>
+<p>Beschrijft de mapping van de gehele set aan beslisregels op de bij de analyse geformuleerde toetsscenario's. Dus voor elk scenario's is duidelijk welke beslisregelset relevant is voor dát specifieke scenario.</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Willen weten</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Toetsscenario’s mapping op bedrijfsregelset.</td>
+<td>Dit is een voorbeeld ter illustratie<br>A. mapt op set 1.<br>B. mapt op set 1.<br>C. mapt op set 1.<br>D. mapt op set 2.<br>E. heeft geen mapping.</td>
+</tr>
+</tbody></table>
+</section><section id="functioneel-ontwerp"><div class="header-wrapper"><h3 id="x6-3-functioneel-ontwerp"><bdi class="secno">6.3 </bdi>Functioneel ontwerp</h3><a class="self-link" href="#functioneel-ontwerp" aria-label="Permalink for Section 6.3"></a></div>
+<p>Speciale aandacht hierbij voor de plek(ken) waar de functionaliteiten waarmee de gebruikers- en beleidsscenario's bij de analyse hierboven worden ondersteund en uitgevoerd zijn beschreven.</p>
+<ol>
+<li>Is dat (het/een) Functioneel Ontwerp? Of kent de organisatie een andere vorm?</li>
+<li>Welke FO's kent de organisatie? Voorbeelden:</li>
+</ol>
+<ul>
+<li>algemeen functioneel ontwerp​</li>
+<li>logisch gegevens model​</li>
+<li>mens machine interface ​</li>
+<li>functioneel invoer proces​</li>
+<li>functioneel uitvoer proces</li>
+</ul>
+<ol start="3">
+<li>Hoe worden wijzigingen t.o.v. vorige versie(s) bijgehouden?</li>
+<li>Als er beslissingen genomen worden die het betreffende functioneel ontwerp aangaan dan wordt die beslissing bij voorkeur gedocumenteerd. Is dat zichtbaar?</li>
+<li>Beschrijft tenslotte de mapping van de gehele set aan testgevallen op de beslisregels. Dus voor elke beslisregelset is duidelijk welke testgevallen relevant zijn voor díe specifieke beslisregelset.</li>
+</ol>
+<table class="simple">
+<thead>
+<tr>
+<th>Willen weten</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bedrijfsregelset mapping op testgevallen.</td>
+<td>Dit is een voorbeeld ter illustratie<br>Set 1 heeft testgevallen 01..07.<br>Set 2 heeft testgevallen 08..11.<br>Voor toetsscenario E. ontbreken de testgevallen omdat er géén mapping is met bedrijfsregelset.</td>
+</tr>
+</tbody></table>
+</section><section id="code-0"><div class="header-wrapper"><h3 id="x6-4-code"><bdi class="secno">6.4 </bdi>Code</h3><a class="self-link" href="#code-0" aria-label="Permalink for Section 6.4"></a></div>
+<p>Beschrijft de gehanteerde Git workflow voor CI/CD én het corresponderende versiebeheer van toetsscenario's, beslisregelsets en testgevallen. Legt ook uit wat de gehanteerde test strategie is. Beschikt over de KPI's / rapportage items van het proces toetsen en testen (BiSL).</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Willen weten</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. Versiebeheer<br>2. Testgevallen<br>3. Bedrijfsregelset<br>4. Toetsscenario<br>5. Git workflow<br>6. Test strategie</td>
+<td>Geen voorbeeld vooralsnog</td>
+</tr>
+</tbody></table>
+</section><section id="digitale-interactie-werkinstructie"><div class="header-wrapper"><h3 id="x6-5-digitale-interactie-werkinstructie"><bdi class="secno">6.5 </bdi>Digitale interactie &amp; Werkinstructie</h3><a class="self-link" href="#digitale-interactie-werkinstructie" aria-label="Permalink for Section 6.5"></a></div>
+<p>Legt voor ieder toetssenario apart uit op welke wijze de digitale interactie plaats vindt én welke werkinstructie daarbij wordt gehanteerd waar nodig.</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Willen weten</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Workflow per toetsscenario</td>
+<td>Geen voorbeeld vooralsnog</td>
+</tr>
+</tbody></table>
+</section><section id="brief"><div class="header-wrapper"><h3 id="x6-6-brief"><bdi class="secno">6.6 </bdi>Brief</h3><a class="self-link" href="#brief" aria-label="Permalink for Section 6.6"></a></div>
+<p>Bij de analyse is communicatiebeleid vastgesteld voor én over(!) de oplossing(en). Hier wordt de verbinding gemaakt met de wijze waarop dat voor alle toetsscenario's is verwerkt in vaste en/of vrije tekst(en).</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Willen weten</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Vaste vs vrije tekst(en) voor alle toetsscenario’s</td>
+<td>Geen voorbeeld vooralsnog</td>
+</tr>
+</tbody></table>
+</section></section>
+  <section id="audit-accountant-perspectief-vragenlijst"><div class="header-wrapper"><h2 id="x7-audit-accountant-perspectief-vragenlijst"><bdi class="secno">7. </bdi>Audit/accountant perspectief Vragenlijst</h2><a class="self-link" href="#audit-accountant-perspectief-vragenlijst" aria-label="Permalink for Section 7."></a></div>
+<ol>
+<li>Hoe is de organisatie ingericht? Welke onderdelen zijn betrokken bij het proces van ontwikkeling of wijziging van een algoritme?</li>
+<li>Wie is de 'eigenaar' van het algoritme binnen de organisatie: wie heeft dus de primaire zeggenschap over ontwikkeling van nieuwe algoritmen en wijziging van bestaande algoritmen?</li>
+<li>Hoe wordt de ontwikkeling of wijziging van algoritmen in het maakproces gedocumenteerd (vastlegging traces naar bronnen, gemaakte keuzes, interpretaties etc.)?</li>
+<li>Hoe is het ontwikkelproces van algoritmen zelf vastgelegd en gedocumenteerd?</li>
+<li>Hoe is de keuze voor ontwikkelmethodiek en ondersteunende applicaties gemaakt?</li>
+<li>Is er een centrale bewaarplaats (repository) voor algoritmen ingericht en hoe wordt deze beheerd?</li>
+<li>Hoe zijn de algoritmen getest op het verzekeren van financieel rechtmatige besluiten (LINK begrippenlijst)?</li>
+<li>Hoe is de overdracht van algoritmen van ontwikkelaar naar eigenaar ingericht? Hoe wordt décharge verleend voor juiste uitvoering van de ontwikkel- of wijzigingsopdracht?</li>
+<li>Hoe is sturing ingericht op naleving van architecturen waarin de ontwikkeling en wijziging van algoritmen is opgenomen?</li>
+<li>Hoe worden de resultaten van toepassing van de algoritmen vastgelegd ten behoeve van evaluatie van (neven)effecten?</li>
+</ol>
+</section>
+  <section id="begrippenlijst"><div class="header-wrapper"><h2 id="x8-begrippenlijst"><bdi class="secno">8. </bdi>Begrippenlijst</h2><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 8."></a></div>
+<p><dfn id="dfn-abbb" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">ABBB</dfn> de Algemene beginselen van behoorlijk bestuur (**on)geschreven regels waar de overheid en ambtenaren zich aan moeten houden bij handelingen en besluiten.</p>
+<p><dfn id="dfn-algoritme" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Algoritme</dfn> Een procedure of reeks regels die worden gebruikt bij het berekenen en oplossen van problemen; een nauwkeurig gedefinieerde reeks wiskundige of logische bewerkingen voor de uitvoering van een bepaalde taak.</p>
+<p><dfn id="dfn-algoritmeregister" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Algoritmeregister</dfn> Een voorziening waarin een verzameling van algoritmen die worden gebruikt, openbaar wordt gemaakt.</p>
+<p><dfn id="dfn-auditor" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Auditor</dfn> iemand die zich beroepsmatig bezighoudt met het controleren van een organisatie volgens een vaste methodiek.</p>
+<p><dfn id="dfn-awb" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Awb</dfn> Algemene wet bestuursrecht. Een wet die de algemene regels bevat voor de verhouding tussen de overheid en de burger.</p>
+<p><dfn id="dfn-beleidsregels" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Beleidsregels</dfn> Op grond van artikel 4:81, eerste lid, van de Awb kan een bestuursorgaan beleidsregels vaststellen met betrekking tot een hem toekomende of onder zijn verantwoordelijkheid uitgeoefende, dan wel door hem gedelegeerde bevoegdheid.</p>
+<p><dfn id="dfn-beoordelingsruimte" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Beoordelingsruimte</dfn> Omdat er eigenlijk nooit voor alle gevallen precies bij wet is voorgeschreven wat er moet gebeuren, heeft een bestuursorgaan doorgaans beoordelingsruimte bij het toepassen van algemene regels in individuele omstandigheden. Het bestuursorgaan maakt van deze ruimte gebruik in de uitvoering, dus ook in een geautomatiseerde uitvoering.</p>
+<p><dfn id="dfn-bereik-van-de-legitimaat" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Bereik van de LegitiMaat</dfn> De LegitiMaat ziet op het gehele proces van wet tot aan individueel besluit en daarna, reactie van de ontvangers (telefoontjes, klachten, bezwaren).</p>
+<p><dfn id="dfn-beslisambtenaar" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Beslisambtenaar</dfn> De ambtenaar die bevoegd is te beslissen in een individueel geval.</p>
+<p><dfn id="dfn-beslisregels" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Beslisregels</dfn> de waarmee variabelen worden getoetst op waar/niet waar, waarna het tot een beslissing komt.</p>
+<p><dfn id="dfn-broncode-source-code" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Broncode (source code)</dfn> de originele tekst waaruit de software voorkomt. Dit is een voor programmeurs leesbare tekst en bevat de programma-instructies over de werking van de functionaliteit van de code.</p>
+<p><dfn id="dfn-decision-mining" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Decision mining</dfn> techniek waarbij aan de hand van de resultaten, de besluiten, kan worden geanalyseerd langs welke routines de besluiten feitelijk zijn genomen.</p>
+<p><dfn id="dfn-discretionaire-bevoegdheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Discretionaire bevoegdheid</dfn> Bij een discretionaire bevoegdheid heeft de wetgever aan het bestuursorgaan een bevoegdheid verleend om in tot op zekere hoogte zelf te bepalen welke besluit wordt genomen (beleidsruimte). Sinds 2022 toetst de bestuursrechter het gebruik van deze ruimte bij een belastend (nadelig) besluit voor de burger indringender aan het evenredigheidsbeginsel van 3:4 van de Awb. In de context van geautomatiseerde uitvoering van wetten wordt wel gezegd dat dit vooral geschikt is voor wetgeving met gebonden bevoegdheden. Dit betekent dat uit de wettelijke bepalingen voortvloeit wat het bestuur moet besluiten.</p>
+<p><dfn id="dfn-functioneel-ontwerp" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Functioneel ontwerp</dfn> hierin worden alle eisen en wensen waaraan een product moet voldoen verzameld en geordend. Er wordt beschreven op welke manier, welke verwachten de gebruiker heeft, welke handelingen hij uitvoert en welke resultaten die oplevert.</p>
+<p><dfn id="dfn-information-technology-infrastructure-library-itil" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Information Technology Infrastructure Library (ITIL)</dfn> een referentiekader ontwikkeld voor het inrichten van de beheersprocessen binnen een ICT-organisatie.</p>
+<p><dfn id="dfn-intercoder-reliability" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Intercoder reliability</dfn> In de context van kwantitatief onderzoek is intercoder reliability de mate waarin 2 verschillende onderzoekers het eens zijn over het coderen van dezelfde inhoud. Het zorgt ervoor dat wanneer meerdere onderzoekers een set gegevens coderen, ze tot dezelfde conclusies komen.</p>
+<p><dfn id="dfn-interdisciplinair" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Interdisciplinair</dfn> het integreren van inzichten uit meerdere vakgebieden (disciplines).</p>
+<p><dfn id="dfn-interne-controller" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Interne controller</dfn> medewerker die belast is met het monitoren en controleren van bedrijfsprocessen.</p>
+<p><dfn id="dfn-keteneffecten" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Keteneffecten</dfn> Binnen de overheid worden veel data en systemen aan elkaar verbonden. Dit betekent dat zowel de invoer (data) als het resultaat (een besluit) relaties hebben met andere processen, andere werkvelden, andere wetten en andere instanties. Het inzicht bieden in deze relaties en beoordelen of deze uitvoering volgens de wet, ABBB en het verbod van discriminatie is, hoort ook bij De LegitiMaat.</p>
+<p><dfn id="dfn-machine-learning" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Machine learning</dfn> Een machine learning (ML) algoritme moet worden getraind met een dataset. Het trainen houdt in dat het ML algoritme deze dataset analyseert en leert patronen en correlaties in deze dataset herkennen. Na het trainen, is het ML algoritme in staat de geleerde patronen en correlaties toe te passen op een nieuwe (onbekende) dataset. Doorgaans moeten ML algoritmes op grote hoeveelheden data getraind worden voordat zij accurate patronen en correlaties kunnen herkennen.</p>
+<p><dfn id="dfn-open-source-beleid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Open source beleid</dfn> beleid waarin is bepaald dat de broncode [LINK NAAR BRONCODE] vrij beschikbaar is. Iedereen kan de broncode lezen, aanpassen en verspreiden.</p>
+<p><dfn id="dfn-process-mining" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Process mining</dfn> techniek om met behulp van event logs in applicaties processen te visualiseren en te analyseren. Het is een objectief, op feiten gebaseerd hulpmiddel is om processen te analyseren en te verbeteren.</p>
+<p><dfn data-lt="Procesvertegenwoordigers|Procesvertegenwoordiger" data-plurals="procesvertegenwoordiger" id="dfn-procesvertegenwoordigers" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Procesvertegenwoordigers</dfn> mensen die het bestuursorgaan vertegenwoordigen in beroep of hoger beroep bij de bestuursrechter.</p>
+<p><dfn data-lt="Rechtmatigheid|Rechtmatig" id="dfn-rechtmatigheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Rechtmatigheid</dfn> het is bij de overheid gebruikelijk om een onderscheid te maken tussen juridische rechtmatigheid en financiële rechtmatigheid in het kader van controle-en verantwoording. Het juridische begrip rechtmatigheid gaat over alle geldende wetten en regels. Er wordt beoordeeld of het handelen in overeenstemming is met deze wetten en regels. Het begrip rechtmatigheid dat door de accountant voor de overheid wordt gehanteerd is beperkter. Dan gaat het om een directe relatie met het financiële beheer. In de LegitiMaat geven we daarom steeds aan welke vorm van rechtmatigheid we bedoelen.</p>
+<p><dfn id="dfn-regelexpert" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Regelexpert</dfn> medewerker die wetten vertaalt in regels.</p>
+<p><dfn id="dfn-rekenregels" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Rekenregels</dfn> regels waarmee een som gemaakt wordt met de variabelen</p>
+<p><dfn id="dfn-repository" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Repository</dfn> een ICT/-architectenterm voor een bewaarplaats of magazijn.</p>
+<p><dfn id="dfn-selectieregels" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Selectieregels</dfn> met selectieregels kan worden geselecteerd welke zaken geautomatiseerd worden afgehandeld en welke door een medewerker moeten worden bekeken.</p>
+<p><dfn id="dfn-softwareontwikkelaar" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Softwareontwikkelaar</dfn> een persoon die zich bezighoudt met het programmeren van software. Een softwareontwikkelaar wordt ook wel programmeur, computerprogrammeur of applicatieontwikkelaar genoemd.</p>
+<p><dfn id="dfn-statistische-algoritmen" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Statistische algoritmen</dfn> Een statistisch algoritme is een ML algoritme dat op basis van trainingsdata een voorspelling maakt voor nieuwe data. Deze voorspelling is een kansberekening en geeft de kans weer dat een bepaalde situatie zich voor zal doen. Dit kan gebaseerd zijn op data uit het verleden, maar ook op data uit vergelijkbare situaties.</p>
+<p><dfn id="dfn-uitvoeringsbeleid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Uitvoeringsbeleid</dfn> Consistente gedragslijn die is neergelegd in interne werkinstructies en waarin wordt bepaald hoe wordt omgegaan met bepaalde gevallen en hoe de beoordelingsruimte wordt ingevuld.</p>
+<p><dfn data-lt="Uitworp|Uitval|Niet glad geval|Uitworp/uitval/niet glad geval" id="dfn-uitworp" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Uitworp/uitval/niet glad geval</dfn> bij geautomatiseerde uitvoering van wetten is het gebruikelijk dat bepaald wordt welke zaken volledig geautomatiseerd worden afgehandeld en welke zaken door een medewerker nader bekeken moeten worden. Dit bepalen wordt soms aan de hand van selectieregels [link naar begrippenlijst] gedaan.</p>
+<p><dfn id="dfn-valideren" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Valideren</dfn> iets geldig verklaren.</p>
+<p><dfn id="dfn-verfieren" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verfiëren</dfn> onderzoeken of iets juist is.</p>
+<p><dfn id="dfn-voorbereidingshandelingen" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Voorbereidingshandelingen</dfn> Op grond van de Awb leidt een aanvraag tot een besluit. Om tot dit besluit te komen worden voorbereidingshandelingen verricht. Een deel van het proces dat met De LegitiMaat wordt getoetst, valt samen met deze voorbereidingshandelingen.</p>
+</section>
+  
+  <section id="conformance"><div class="header-wrapper"><h2 id="x9-conformiteit"><bdi class="secno">9. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 9."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
+  <section id="tof"><div class="header-wrapper"><h2 id="x10-lijst-met-figuren"><bdi class="secno">10. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 10."></a></div><ul class="tof">
+        <li class="tofline">
+    <a class="tocxref" href="#fig-processen-wetsuitvoering">Figuur <bdi class="figno">1</bdi> <span class="fig-title">Processen wetsuitvoering</span></a>
+  </li><li class="tofline">
+    <a class="tocxref" href="#fig-voorbereidende-handelingen">Figuur <bdi class="figno">2</bdi> <span class="fig-title">Voorbereidende handelingen</span></a>
+  </li>
+      </ul></section>
+  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
+    <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
+    <ul class="index">
+    <li>
+      <a class="index-term" href="#dfn-abbb">ABBB</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-algoritme">Algoritme</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-algoritmeregister">Algoritmeregister</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-auditor">Auditor</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-awb">Awb</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-beleidsregels">Beleidsregels</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-beoordelingsruimte">Beoordelingsruimte</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-bereik-van-de-legitimaat">Bereik van de LegitiMaat</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-beslisambtenaar">Beslisambtenaar</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-beslisregels">Beslisregels</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-broncode-source-code">Broncode (source code)</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-decision-mining">Decision mining</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-discretionaire-bevoegdheid">Discretionaire bevoegdheid</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-functioneel-ontwerp">Functioneel ontwerp</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-information-technology-infrastructure-library-itil">Information Technology Infrastructure Library (ITIL)</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-intercoder-reliability">Intercoder reliability</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-interdisciplinair">Interdisciplinair</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-interne-controller">Interne controller</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-keteneffecten">Keteneffecten</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-machine-learning">Machine learning</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-open-source-beleid">Open source beleid</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-process-mining">Process mining</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-procesvertegenwoordigers">Procesvertegenwoordigers</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-rechtmatigheid">Rechtmatigheid</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-regelexpert">Regelexpert</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-rekenregels">Rekenregels</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-repository">Repository</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-selectieregels">Selectieregels</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-softwareontwikkelaar">Softwareontwikkelaar</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-statistische-algoritmen">Statistische algoritmen</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-uitvoeringsbeleid">Uitvoeringsbeleid</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-uitworp">Uitworp/uitval/niet glad geval</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-valideren">Valideren</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-verfieren">Verfiëren</a> 
+    <span class="print-only">§8.</span></li><li>
+      <a class="index-term" href="#dfn-voorbereidingshandelingen">Voorbereidingshandelingen</a> 
+    <span class="print-only">§8.</span></li>
+  </ul>
+  </section><section id="index-defined-elsewhere">
+    <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
+    <ul class="index">
+    
+  </ul>
+  </section></section>
+
+
+<p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-abbb" aria-label="Links in this document to definition: ABBB">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-abbb" aria-label="Permalink for definition: ABBB. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-algoritme" aria-label="Links in this document to definition: Algoritme">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-algoritme" aria-label="Permalink for definition: Algoritme. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-algoritmeregister" aria-label="Links in this document to definition: Algoritmeregister">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-algoritmeregister" aria-label="Permalink for definition: Algoritmeregister. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-auditor" aria-label="Links in this document to definition: Auditor">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-auditor" aria-label="Permalink for definition: Auditor. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-awb" aria-label="Links in this document to definition: Awb">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-awb" aria-label="Permalink for definition: Awb. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-beleidsregels" aria-label="Links in this document to definition: Beleidsregels">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-beleidsregels" aria-label="Permalink for definition: Beleidsregels. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-beoordelingsruimte" aria-label="Links in this document to definition: Beoordelingsruimte">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-beoordelingsruimte" aria-label="Permalink for definition: Beoordelingsruimte. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bereik-van-de-legitimaat" aria-label="Links in this document to definition: Bereik van de LegitiMaat">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-bereik-van-de-legitimaat" aria-label="Permalink for definition: Bereik van de LegitiMaat. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-bereik-van-de-legitimaat-1" title="§ 3.1 Welke representatieve keuzen?">§ 3.1 Welke representatieve keuzen?</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-beslisambtenaar" aria-label="Links in this document to definition: Beslisambtenaar">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-beslisambtenaar" aria-label="Permalink for definition: Beslisambtenaar. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-beslisambtenaar-1" title="§ 3.3.3 Juridisch perspectief">§ 3.3.3 Juridisch perspectief</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-beslisregels" aria-label="Links in this document to definition: Beslisregels">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-beslisregels" aria-label="Permalink for definition: Beslisregels. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-broncode-source-code" aria-label="Links in this document to definition: Broncode (source code)">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-broncode-source-code" aria-label="Permalink for definition: Broncode (source code). Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-broncode-source-code-1" title="§ 1.3.3 Over algoritmen en source code">§ 1.3.3 Over algoritmen en source code</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-decision-mining" aria-label="Links in this document to definition: Decision mining">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-decision-mining" aria-label="Permalink for definition: Decision mining. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-discretionaire-bevoegdheid" aria-label="Links in this document to definition: Discretionaire bevoegdheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-discretionaire-bevoegdheid" aria-label="Permalink for definition: Discretionaire bevoegdheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-functioneel-ontwerp" aria-label="Links in this document to definition: Functioneel ontwerp">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-functioneel-ontwerp" aria-label="Permalink for definition: Functioneel ontwerp. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-functioneel-ontwerp-1" title="§ 3.3.2 Informatiekundig perspectief">§ 3.3.2 Informatiekundig perspectief</a> 
+  </li><li>
+    <a href="#ref-for-dfn-functioneel-ontwerp-2" title="§ 4. De LegitiMaat documentenlijst">§ 4. De LegitiMaat documentenlijst</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-information-technology-infrastructure-library-itil" aria-label="Links in this document to definition: Information Technology Infrastructure Library (ITIL)">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-information-technology-infrastructure-library-itil" aria-label="Permalink for definition: Information Technology Infrastructure Library (ITIL). Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-information-technology-infrastructure-library-itil-1" title="§ 3.3.2 Informatiekundig perspectief">§ 3.3.2 Informatiekundig perspectief</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-intercoder-reliability" aria-label="Links in this document to definition: Intercoder reliability">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-intercoder-reliability" aria-label="Permalink for definition: Intercoder reliability. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-interdisciplinair" aria-label="Links in this document to definition: Interdisciplinair">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-interdisciplinair" aria-label="Permalink for definition: Interdisciplinair. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-interne-controller" aria-label="Links in this document to definition: Interne controller">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-interne-controller" aria-label="Permalink for definition: Interne controller. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-interne-controller-1" title="§ 3.3.4 Audit perspectief">§ 3.3.4 Audit perspectief</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-keteneffecten" aria-label="Links in this document to definition: Keteneffecten">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-keteneffecten" aria-label="Permalink for definition: Keteneffecten. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-keteneffecten-1" title="§ 1.3.4 Het bereik van De LegitiMaat">§ 1.3.4 Het bereik van De LegitiMaat</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-machine-learning" aria-label="Links in this document to definition: Machine learning">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-machine-learning" aria-label="Permalink for definition: Machine learning. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-machine-learning-1" title="§ 1.3.4 Het bereik van De LegitiMaat">§ 1.3.4 Het bereik van De LegitiMaat</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-open-source-beleid" aria-label="Links in this document to definition: Open source beleid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-open-source-beleid" aria-label="Permalink for definition: Open source beleid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-open-source-beleid-1" title="§ 1.2.2 Relatie met andere initiatieven">§ 1.2.2 Relatie met andere initiatieven</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-process-mining" aria-label="Links in this document to definition: Process mining">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-process-mining" aria-label="Permalink for definition: Process mining. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-procesvertegenwoordigers" aria-label="Links in this document to definition: Procesvertegenwoordigers">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-procesvertegenwoordigers" aria-label="Permalink for definition: Procesvertegenwoordigers. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-procesvertegenwoordigers-1" title="§ 3.3.3 Juridisch perspectief">§ 3.3.3 Juridisch perspectief</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtmatigheid" aria-label="Links in this document to definition: Rechtmatigheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rechtmatigheid" aria-label="Permalink for definition: Rechtmatigheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rechtmatigheid-1" title="§ 1.2.1 Interdisciplinair en generiek">§ 1.2.1 Interdisciplinair en generiek</a> <a href="#ref-for-dfn-rechtmatigheid-2" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rechtmatigheid-3" title="§ 3.3.4 Audit perspectief">§ 3.3.4 Audit perspectief</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-regelexpert" aria-label="Links in this document to definition: Regelexpert">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-regelexpert" aria-label="Permalink for definition: Regelexpert. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-regelexpert-1" title="§ 3.3.3 Juridisch perspectief">§ 3.3.3 Juridisch perspectief</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rekenregels" aria-label="Links in this document to definition: Rekenregels">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rekenregels" aria-label="Permalink for definition: Rekenregels. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-repository" aria-label="Links in this document to definition: Repository">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-repository" aria-label="Permalink for definition: Repository. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-selectieregels" aria-label="Links in this document to definition: Selectieregels">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-selectieregels" aria-label="Permalink for definition: Selectieregels. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-softwareontwikkelaar" aria-label="Links in this document to definition: Softwareontwikkelaar">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-softwareontwikkelaar" aria-label="Permalink for definition: Softwareontwikkelaar. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-softwareontwikkelaar-1" title="§ 3.2 De Beoordelaars">§ 3.2 De Beoordelaars</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-statistische-algoritmen" aria-label="Links in this document to definition: Statistische algoritmen">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-statistische-algoritmen" aria-label="Permalink for definition: Statistische algoritmen. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-statistische-algoritmen-1" title="§ 1.3.4 Het bereik van De LegitiMaat">§ 1.3.4 Het bereik van De LegitiMaat</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-uitvoeringsbeleid" aria-label="Links in this document to definition: Uitvoeringsbeleid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-uitvoeringsbeleid" aria-label="Permalink for definition: Uitvoeringsbeleid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-uitworp" aria-label="Links in this document to definition: Uitworp/uitval/niet glad geval">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-uitworp" aria-label="Permalink for definition: Uitworp/uitval/niet glad geval. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-uitworp-1" title="§ 3.3.3 Juridisch perspectief">§ 3.3.3 Juridisch perspectief</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-valideren" aria-label="Links in this document to definition: Valideren">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-valideren" aria-label="Permalink for definition: Valideren. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verfieren" aria-label="Links in this document to definition: Verfiëren">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verfieren" aria-label="Permalink for definition: Verfiëren. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-voorbereidingshandelingen" aria-label="Links in this document to definition: Voorbereidingshandelingen">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-voorbereidingshandelingen" aria-label="Permalink for definition: Voorbereidingshandelingen. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
