@@ -11,7 +11,7 @@ var respecConfig =
   previousPublishDate: "",
   //  previousMaturity: "WV",
   editors: [{
-    name: "Mildo Staden",
+    name: "Mildo van Staden",
     mailto: "Mildo.Staden@minbzk.nl",
     company: "BZK",
     companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
