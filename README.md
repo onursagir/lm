@@ -1,4 +1,10 @@
+# LegitiMaat
+
+Deze repository bevat de bronbestanden voor de beschrijving van LegitiMaat.
+Op basis van de bronbestanden wordt de [online LegitiMaat beschrijving](https://minbzk.github.io/LegitiMaat/) gegenereerd.
+
 # Samenvatting
+
 De overheid heeft veel verschillende taken. Deze taken worden bij wet toegekend aan een bestuursorgaan. Een deel van deze wettelijke taken wordt geautomatiseerd uitgevoerd met algoritmen. Denk aan het opleggen van boetes voor te hard rijden, het terugvorderen van toeslagen of het verlenen van AOW of kinderbijslag. Net als bij een meer zichtbare uitvoering van taken zoals het ophogen van dijken, is het belangrijk om te weten hoe deze processen verlopen en welke keuzen daarbij gemaakt zijn. Want ook de geautomatiseerde uitvoering van wetten is publiek handelen en moet legitiem zijn.
 
 In opdracht van het ministerie van BZK hebben experts nu De LegitiMaat ontwikkeld. Dit is een visitatie-instrument om de geautomatiseerde uitvoering van wetten door de overheid op een gestandaardiseerde manier inzichtelijk te maken en te (laten) beoordelen. De De LegitiMaat gaat uit van drie perspectieven: juridisch, ontwikkel en accountperspectief.
