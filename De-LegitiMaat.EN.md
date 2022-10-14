@@ -15,7 +15,7 @@ When new IT systems are being developed, the agency can immediately see what doc
 The LegitiMate is also intended for assessors: the lawyers, auditors and fellow IT developers who need meaningful information on how the legislation is automatically executed.
 
 ## How can I contribute?
-On July 1, 2022, the Dutch prototype was presented to the Ministry of the Interior and Kingdom Relations and published on GitHub. The working method has been developed, tested and adapted in a few sprints. Please contact [Marlies van Eck](marlies@hooghiemstra-en-partners.nl) if you want to contribute or experiment with the use of The LegitiMate.
+On July 1, 2022, the Dutch prototype was presented to the Ministry of the Interior and Kingdom Relations and published on GitHub. The working method has been developed, tested and adapted in a few sprints. Please contact [Marlies van Eck](mailto:marlies@hooghiemstra-en-partners.nl) if you want to contribute or experiment with the use of The LegitiMate.
 
 # A method to evaluate and learn
 The LegitiMate is based on the principles of visitation research. It is a visitation tool. Large parts of the research are delegated to the expert, the public agency.
