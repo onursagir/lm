@@ -16,6 +16,6 @@ jobs:
           mkdir ./output
           npx respec --localhost --src index.html --out "./output/De Legitimaat.html"
       - run: |
-          npx scemantic-release -p [
+          npx semantic-release -p [
             ['@semantic-release/github', { "assets": ["./output/**"] } ]
           ]
