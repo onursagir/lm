@@ -7,14 +7,13 @@ jobs:
   build-html:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - run: mkdir ~/static
       - uses: actions/setup-node@v3
         with:
           path: npm
           node-version: 18
-      - run: mkdir ~/static
-      - name: Static HTML
-        run: |
+      - uses: actions/checkout@v3
+      - run: |
           npx respec --localhost --src index.html --out ~/static/De Legitimaat.html
       - run: |
           npx scemantic-release -p [
