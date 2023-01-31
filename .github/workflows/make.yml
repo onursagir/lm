@@ -17,5 +17,5 @@ jobs:
           npx respec --localhost --src index.html --out "~/static/De Legitimaat.html"
       - run: |
           npx scemantic-release -p [
-            ['@semantic-release/github', { "assets": ["~static/**"] } ]
+            ['@semantic-release/github', { "assets": ["~/static/**"] } ]
           ]
