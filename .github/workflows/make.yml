@@ -1,6 +1,8 @@
 name: Make
 on:
-
+  push:
+    branches:
+      - main
 jobs:
   build-html:
     runs-on: ubuntu-latest
