@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/semantic-release.json",
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "out/De Legitimaat.html",
+            "label": "De Legitimaat"
+          }
+        ]
+      }
+    ]
+  ]
+}
