@@ -12,6 +12,28 @@ jobs:
           path: npm
           node-version: 18
       - uses: actions/checkout@v3
+      - run: | 
+          echo '
+          {
+            "$schema": "https://json.schemastore.org/semantic-release.json",
+            "branches": [
+              "main"
+            ],
+            "plugins": [
+              [
+                "@semantic-release/github",
+                {
+                  "assets": [
+                    {
+                      "path": "out/De Legitimaat.html",
+                      "label": "De Legitimaat"
+                    }
+                  ]
+                }
+              ]
+            ]
+          } ' >> .release.rc
+
       - run: |
           mkdir ./output
           npx respec --localhost --src index.html --out "./output/De Legitimaat.html"
