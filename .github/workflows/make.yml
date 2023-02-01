@@ -15,7 +15,6 @@ jobs:
       - run: | 
           echo '
           {
-            "$schema": "https://json.schemastore.org/semantic-release.json",
             "branches": [
               "main"
             ],
@@ -32,7 +31,7 @@ jobs:
                 }
               ]
             ]
-          } ' >> .release.rc
+          } ' >> .releaserc
 
       - run: |
           mkdir ./output
