@@ -32,11 +32,12 @@ jobs:
               ]
             ]
           } ' >> .releaserc
-      - name: Foo
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      - name: Build Respec document
         run: |
           mkdir ./output
           npx respec --localhost --src index.html --out "./output/De Legitimaat.html"
-      - run: |
+      - name: Make release
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        run: |
           npx semantic-release
