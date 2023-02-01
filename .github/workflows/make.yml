@@ -24,7 +24,7 @@ jobs:
                 {
                   "assets": [
                     {
-                      "path": "out/De Legitimaat.html",
+                      "path": "./output/De Legitimaat.html",
                       "label": "De Legitimaat"
                     }
                   ]
