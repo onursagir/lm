@@ -1,0 +1,13 @@
+name: Make
+on:
+  release:
+    types: [published]
+jobs:
+  Notify API:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notify request
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: 'https:/regels.overheid.nl/api/publications/publish?secret=${{ secrets.PUBLISH_SECRET }}&owner=${{ github.repository.owner.name }}&repo=${{ github.repository.name }}'
+          method: 'GET'
