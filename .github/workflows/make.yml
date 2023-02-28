@@ -7,6 +7,6 @@ jobs:
   build-html:
     runs-on: ubuntu-latest
     steps:
-      - uses: onursagir/regels.overheid.nl/.github/actions/testing/action.yaml@main
+      - uses: onursagir/regels.overheid.nl/.github/actions/testing@main
         with:
           name: 'De Legitimmaat'
