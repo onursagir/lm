@@ -7,37 +7,6 @@ jobs:
   build-html:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v3
+      - uses: onursagir/regels.overheid.nl/.github/actions/testing/action.yaml@main
         with:
-          path: npm
-          node-version: 18
-      - uses: actions/checkout@v3
-      - run: | 
-          echo '
-          {
-            "branches": [
-              "main"
-            ],
-            "plugins": [
-              [
-                "@semantic-release/github",
-                {
-                  "assets": [
-                    {
-                      "path": "./output/De Legitimaat.html",
-                      "label": "De Legitimaat"
-                    }
-                  ]
-                }
-              ]
-            ]
-          } ' >> .releaserc
-      - name: Build Respec document
-        run: |
-          mkdir ./output
-          npx respec --localhost --src index.html --out "./output/De Legitimaat.html"
-      - name: Make release
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-        run: |
-          npx semantic-release
+          name: 'De Legitimmaat'
