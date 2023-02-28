@@ -10,4 +10,4 @@ jobs:
       - uses: onursagir/regels.overheid.nl/.github/actions/testing@main
         with:
           name: 'De Legitimmaat'
-          pat: secrets.GITHUB_TOKEN
+          token: secrets.GITHUB_TOKEN
