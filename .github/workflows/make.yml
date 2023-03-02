@@ -9,4 +9,4 @@ jobs:
     steps:
       - uses: onursagir/regels.overheid.nl/.github/actions/publish@main
         with:
-          token: rooa
+          token: ${{ secrets.PUB_SECRET }}
