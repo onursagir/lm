@@ -10,3 +10,4 @@ jobs:
       - uses: onursagir/regels.overheid.nl/.github/actions/publish@main
         with:
           token: rooa
+          #
