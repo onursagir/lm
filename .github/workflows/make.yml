@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: onursagir/regels.overheid.nl/.github/actions/publish@main
-        # with:
+        with:
         #   name: 'De Legitimmaat'
-        #   token: ${{ secrets.GITHUB_TOKEN }}
+          token: roo
         # 
